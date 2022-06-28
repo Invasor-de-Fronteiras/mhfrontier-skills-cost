@@ -5,12 +5,12 @@ interface Skill {
   gp: number;
   pr: number;
   requirements: string[];
-  id: string;
+  id: number;
   
 }
 
-function getChildrenIds(parentId: string): string[] {
-  const children = new Set<string>();
+function getChildrenIds(parentId: number): number[] {
+  const children = new Set<number>();
 
   const skill = data.find(s => s.id === parentId);
   const requirements = skill?.requirements ?? [];
@@ -29,7 +29,7 @@ function getChildrenIds(parentId: string): string[] {
  * Returns all requirements for a skill. This includes all requirements of requirements.
  * @param parentId the id of the parent skill
  */
-export function getChildren(parentId: string): Skill[] {
+export function getChildren(parentId: number): Skill[] {
   const children = getChildrenIds(parentId);
 
   const res: Skill[] = [];
