@@ -1,0 +1,2178 @@
+[
+  {
+    "name": "Health-10",
+    "gp": 100,
+    "pr": 0,
+    "requirements": [
+      "tairyoku+10"
+    ],
+    "id": "tairyoku-10"
+  },
+  {
+    "name": "Health-20",
+    "gp": 200,
+    "pr": 0,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku-10"
+    ],
+    "id": "tairyoku-20"
+  },
+  {
+    "name": "Health-30",
+    "gp": 400,
+    "pr": 10,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20"
+    ],
+    "id": "tairyoku-30"
+  },
+  {
+    "name": "Eating",
+    "gp": 3000,
+    "pr": 100,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem"
+    ],
+    "id": "hayagui"
+  },
+  {
+    "name": "Recovery Itens UP",
+    "gp": 4000,
+    "pr": 50,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20"
+    ],
+    "id": "tairyokuitem"
+  },
+  {
+    "name": "Herbal Medicine",
+    "id": "herbal_medicine"
+  },
+  {
+    "name": "Atk UP (S)",
+    "gp": 10,
+    "pr": 0,
+    "requirements": [],
+    "id": "kougekiup_1"
+  },
+  {
+    "name": "Atk UP (M)",
+    "gp": 100,
+    "pr": 0,
+    "requirements": [
+      "kougekiup_1"
+    ],
+    "id": "kougekiup_2"
+  },
+  {
+    "name": "Atk UP (L)",
+    "gp": 400,
+    "pr": 50,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2"
+    ],
+    "id": "kougekiup_3"
+  },
+  {
+    "name": "Atk UP (XL)",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3"
+    ],
+    "id": "kougekiup_4"
+  },
+  {
+    "name": "Atk UP (XXL)",
+    "gp": 6000,
+    "pr": 300,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4"
+    ],
+    "id": "kougekiup_5"
+  },
+  {
+    "name": "Strong +1",
+    "gp": 8500,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3"
+    ],
+    "id": "gougeki_1"
+  },
+  {
+    "name": "Strong +2",
+    "gp": 10000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "gougeki_1"
+    ],
+    "id": "gougeki_2"
+  },
+  {
+    "name": "Strong +3",
+    "gp": 15000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "gougeki_1",
+      "gougeki_2"
+    ],
+    "id": "gougeki_3"
+  },
+  {
+    "name": "Strong +4",
+    "gp": 25000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "gougeki_1",
+      "gougeki_2",
+      "gougeki_3"
+    ],
+    "id": "gougeki_4"
+  },
+  {
+    "name": "Strong +5",
+    "gp": 40000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "gougeki_1",
+      "gougeki_2",
+      "gougeki_3",
+      "gougeki_4"
+    ],
+    "id": "gougeki_5"
+  },
+  {
+    "name": "Expert +1",
+    "gp": 10,
+    "pr": 0,
+    "requirements": [],
+    "id": "mikiri_1"
+  },
+  {
+    "name": "Expert +2",
+    "gp": 100,
+    "pr": 0,
+    "requirements": [
+      "mikiri_1"
+    ],
+    "id": "mikiri_2"
+  },
+  {
+    "name": "Expert +3",
+    "gp": 400,
+    "pr": 50,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2"
+    ],
+    "id": "mikiri_3"
+  },
+  {
+    "name": "Expert +4",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3"
+    ],
+    "id": "mikiri_4"
+  },
+  {
+    "name": "Expert +5",
+    "gp": 6000,
+    "pr": 300,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4"
+    ],
+    "id": "mikiri_5"
+  },
+  {
+    "name": "Adrenaline +1",
+    "gp": 1200,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20"
+    ],
+    "id": "kajiba_1"
+  },
+  {
+    "name": "Adrenaline +2",
+    "gp": 8500,
+    "pr": 300,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30"
+    ],
+    "id": "kajiba_2"
+  },
+  {
+    "name": "Exploit Weakness",
+    "gp": 40000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "gougeki_1",
+      "gougeki_2",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4",
+      "syuuchuu_1",
+      "syuuchuu_2",
+      "toishi",
+      "kenjutu+1",
+      "bukisabaki",
+      "kenjutu+2",
+      "togitakumi",
+      "kireaji+1",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "kajiba_2"
+    ],
+    "id": "jakutentokkou"
+  },
+  {
+    "name": "Gunnery",
+    "gp": 1000,
+    "pr": 10,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2"
+    ],
+    "id": "houjutushi"
+  },
+  {
+    "name": "Gunnery Expert",
+    "gp": 3500,
+    "pr": 50,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "houjutushi"
+    ],
+    "id": "houjutuou"
+  },
+  {
+    "name": "Gunnery God",
+    "gp": 8000,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "houjutushi",
+      "houjutuou"
+    ],
+    "id": "houjutushin"
+  },
+  {
+    "name": "Focus +1",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4"
+    ],
+    "id": "syuuchuu_1"
+  },
+  {
+    "name": "Focus +2",
+    "gp": 4800,
+    "pr": 150,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4",
+      "syuuchuu_1"
+    ],
+    "id": "syuuchuu_2"
+  },
+  {
+    "name": "Weapong Handling",
+    "gp": 3000,
+    "pr": 50,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3"
+    ],
+    "id": "bukisabaki"
+  },
+  {
+    "name": "Shiriagari",
+    "gp": 25000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4",
+      "syuuchuu_1",
+      "syuuchuu_2"
+    ],
+    "id": "siriagari"
+  },
+  {
+    "name": "Flute Expert",
+    "gp": 2500,
+    "pr": 0,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2"
+    ],
+    "id": "fuefukimeijin"
+  },
+  {
+    "name": "Encourage +1",
+    "gp": 30000,
+    "pr": 999,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "fuefukimeijin",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1"
+    ],
+    "id": "gekirei_1"
+  },
+  {
+    "name": "Encourage +2",
+    "gp": 40000,
+    "pr": 999,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "fuefukimeijin",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "gekirei_1",
+      "kaihi_2",
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen",
+      "dokumukou",
+      "suiminmukou",
+      "mahimukou"
+    ],
+    "id": "gekirei_2"
+  },
+  {
+    "name": "Martial Arts",
+    "gp": 3000,
+    "pr": 50,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3"
+    ],
+    "id": "taijutu"
+  },
+  {
+    "name": "Martial Arts +2",
+    "gp": 5000,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4",
+      "taijutu"
+    ],
+    "id": "kakutouou"
+  },
+  {
+    "name": "Fire Attack  (S)",
+    "gp": 300,
+    "pr": 10,
+    "id": "hizokuseikyouka_1"
+  },
+  {
+    "name": "Water Attack  (S)",
+    "gp": 300,
+    "pr": 10,
+    "requirements": [
+      "mizutaisei+10"
+    ],
+    "id": "mizuzokuseikyouka_1"
+  },
+  {
+    "name": "Ice Attack  (S)",
+    "gp": 300,
+    "pr": 10,
+    "requirements": [
+      "kooritaisei+10"
+    ],
+    "id": "koorizokuseikyouka_1"
+  },
+  {
+    "name": "Thunder Attack  (S)",
+    "gp": 300,
+    "pr": 10,
+    "requirements": [
+      "kaminaritaisei+10"
+    ],
+    "id": "kaminarizokuseikyouka_1"
+  },
+  {
+    "name": "Dragon Attack  (S)",
+    "gp": 300,
+    "pr": 10,
+    "requirements": [
+      "ryuutaisei+10"
+    ],
+    "id": "ryuuzokuseikyouka_1"
+  },
+  {
+    "name": "Fire Attack  (L)",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "hitaisei+10",
+      "hitaisei+20",
+      "hizokuseikyouka_1"
+    ],
+    "id": "hizokuseikyouka_2"
+  },
+  {
+    "name": "Water Attack  (L)",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "mizutaisei+10",
+      "mizutaisei+20",
+      "mizuzokuseikyouka_1"
+    ],
+    "id": "mizuzokuseikyouka_2"
+  },
+  {
+    "name": "Ice Attack  (L)",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "kooritaisei+10",
+      "kooritaisei+20",
+      "koorizokuseikyouka_1"
+    ],
+    "id": "koorizokuseikyouka_2"
+  },
+  {
+    "name": "Thunder Attack  (L)",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "kaminaritaisei+10",
+      "kaminaritaisei+20",
+      "kaminarizokuseikyouka_1"
+    ],
+    "id": "kaminarizokuseikyouka_2"
+  },
+  {
+    "name": "Dragon Attack  (L)",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "ryuutaisei+10",
+      "ryuutaisei+20",
+      "ryuuzokuseikyouka_1"
+    ],
+    "id": "ryuuzokuseikyouka_2"
+  },
+  {
+    "name": "Elemental Attack",
+    "gp": 4800,
+    "pr": 200,
+    "requirements": [
+      "hitaisei+10",
+      "hitaisei+20",
+      "hizokuseikyouka_1",
+      "mizutaisei+10",
+      "mizutaisei+20",
+      "mizuzokuseikyouka_1",
+      "kooritaisei+10",
+      "kooritaisei+20",
+      "koorizokuseikyouka_1",
+      "kaminaritaisei+10",
+      "kaminaritaisei+20",
+      "kaminarizokuseikyouka_1",
+      "ryuutaisei+10",
+      "ryuutaisei+20",
+      "ryuuzokuseikyouka_1",
+      "hizokuseikyouka_2",
+      "mizuzokuseikyouka_2",
+      "koorizokuseikyouka_2",
+      "kaminarizokuseikyouka_2",
+      "ryuuzokuseikyouka_2"
+    ],
+    "id": "zokuseikyouka"
+  },
+  {
+    "name": "Status Attack",
+    "gp": 4800,
+    "pr": 200,
+    "requirements": [
+      "hitaisei+10",
+      "hitaisei+20",
+      "hizokuseikyouka_1",
+      "mizutaisei+10",
+      "mizutaisei+20",
+      "mizuzokuseikyouka_1",
+      "kooritaisei+10",
+      "kooritaisei+20",
+      "koorizokuseikyouka_1",
+      "kaminaritaisei+10",
+      "kaminaritaisei+20",
+      "kaminarizokuseikyouka_1",
+      "ryuutaisei+10",
+      "ryuutaisei+20",
+      "ryuuzokuseikyouka_1",
+      "hizokuseikyouka_2",
+      "mizuzokuseikyouka_2",
+      "koorizokuseikyouka_2",
+      "kaminarizokuseikyouka_2",
+      "ryuuzokuseikyouka_2",
+      "zokuseikyouka",
+      "bougyo+20",
+      "mahihangen",
+      "dokuhangen",
+      "suiminhangen",
+      "joutaiijouhangen"
+    ],
+    "id": "joutaiijoukyouka"
+  },
+  {
+    "name": "Drug Knowledge",
+    "gp": 9500,
+    "pr": 999,
+    "requirements": [
+      "hitaisei+10",
+      "hitaisei+20",
+      "hizokuseikyouka_1",
+      "mizutaisei+10",
+      "mizutaisei+20",
+      "mizuzokuseikyouka_1",
+      "kooritaisei+10",
+      "kooritaisei+20",
+      "koorizokuseikyouka_1",
+      "kaminaritaisei+10",
+      "kaminaritaisei+20",
+      "kaminarizokuseikyouka_1",
+      "ryuutaisei+10",
+      "ryuutaisei+20",
+      "ryuuzokuseikyouka_1",
+      "hizokuseikyouka_2",
+      "mizuzokuseikyouka_2",
+      "koorizokuseikyouka_2",
+      "kaminarizokuseikyouka_2",
+      "ryuuzokuseikyouka_2",
+      "zokuseikyouka",
+      "bougyo+20",
+      "mahihangen",
+      "dokuhangen",
+      "suiminhangen",
+      "joutaiijouhangen",
+      "joutaiijoukyouka",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5"
+    ],
+    "id": "gekibutu"
+  },
+  {
+    "name": "Defense +20",
+    "gp": 10,
+    "pr": 0,
+    "id": "bougyo+20"
+  },
+  {
+    "name": "Defense +30",
+    "gp": 100,
+    "pr": 0,
+    "requirements": [
+      "bougyo+20"
+    ],
+    "id": "bougyo+30"
+  },
+  {
+    "name": "Defense +60",
+    "gp": 400,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "bougyo+60"
+  },
+  {
+    "name": "Defense +90",
+    "gp": 3000,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "bougyo+60"
+    ],
+    "id": "bougyo+90"
+  },
+  {
+    "name": "Defense +120",
+    "gp": 6500,
+    "pr": 300,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "bougyo+60",
+      "bougyo+90"
+    ],
+    "id": "bougyo+120"
+  },
+  {
+    "name": "Guard +1",
+    "gp": 2000,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "guard+1"
+  },
+  {
+    "name": "Guard +2",
+    "gp": 5000,
+    "pr": 200,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "guard+1",
+      "bougyo+60",
+      "bougyo+90"
+    ],
+    "id": "guard+2"
+  },
+  {
+    "name": "Speed Sharpening",
+    "gp": 2500,
+    "pr": 50,
+    "id": "toishi"
+  },
+  {
+    "name": "Sharpening Artisan",
+    "gp": 3000,
+    "pr": 200,
+    "requirements": [
+      "toishi"
+    ],
+    "id": "togitakumi"
+  },
+  {
+    "name": "Fencing +1",
+    "gp": 3500,
+    "pr": 100,
+    "requirements": [
+      "toishi"
+    ],
+    "id": "kenjutu+1"
+  },
+  {
+    "name": "Fencing +2",
+    "gp": 8000,
+    "pr": 200,
+    "requirements": [
+      "toishi",
+      "kenjutu+1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki"
+    ],
+    "id": "kenjutu+2"
+  },
+  {
+    "name": "Sharpness +1",
+    "gp": 9500,
+    "pr": 500,
+    "requirements": [
+      "toishi",
+      "kenjutu+1",
+      "bukisabaki",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kenjutu+2",
+      "togitakumi",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "kajiba_2"
+    ],
+    "id": "kireaji+1"
+  },
+  {
+    "name": "Edge Master +1",
+    "gp": 10000,
+    "pr": 999,
+    "requirements": [
+      "toishi",
+      "kenjutu+1",
+      "bukisabaki",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kenjutu+2",
+      "togitakumi",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "kajiba_2",
+      "kireaji+1"
+    ],
+    "id": "shinuti_1"
+  },
+  {
+    "name": "Edge Master +2",
+    "gp": 15000,
+    "pr": 999,
+    "requirements": [
+      "toishi",
+      "kenjutu+1",
+      "bukisabaki",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kenjutu+2",
+      "togitakumi",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "kajiba_2",
+      "kireaji+1",
+      "shinuti_1"
+    ],
+    "id": "shinuti_2"
+  },
+  {
+    "name": "Edge Master +3",
+    "gp": 20000,
+    "pr": 999,
+    "requirements": [
+      "toishi",
+      "kenjutu+1",
+      "bukisabaki",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kenjutu+2",
+      "togitakumi",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "kajiba_2",
+      "kireaji+1",
+      "shinuti_1",
+      "shinuti_2",
+      "kantuu_lv1_tuika"
+    ],
+    "id": "shinuti_3"
+  },
+  {
+    "name": "Pierce ShotLv1 Add",
+    "gp": 200,
+    "pr": 10,
+    "id": "kantuu_lv1_tuika"
+  },
+  {
+    "name": "Pierce Shot UP",
+    "gp": 2500,
+    "pr": 100,
+    "id": "kantuu_iryokuup"
+  },
+  {
+    "name": "Pierce ShotLv1&2 Add",
+    "gp": 600,
+    "pr": 30,
+    "requirements": [
+      "kantuu_lv1_tuika"
+    ],
+    "id": "kantuu_lv12_tuika"
+  },
+  {
+    "name": "Pellet Shot UP",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2"
+    ],
+    "id": "sandan_iryokuup"
+  },
+  {
+    "name": "Normal ShotAll Add",
+    "gp": 600,
+    "pr": 30,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2"
+    ],
+    "id": "tuujou_tuika"
+  },
+  {
+    "name": "Normal Shot U",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "tuujou_tuika"
+    ],
+    "id": "tuujou_iryokuup"
+  },
+  {
+    "name": "Rapid Fire",
+    "gp": 6000,
+    "pr": 150,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "tuujou_tuika",
+      "tuujou_iryokuup",
+      "kantuu_lv1_tuika",
+      "kantuu_lv12_tuika",
+      "handoukeigen+1"
+    ],
+    "id": "rensya"
+  },
+  {
+    "name": "Load UP",
+    "gp": 5000,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "tuujou_tuika"
+    ],
+    "id": "soutensuuup"
+  },
+  {
+    "name": "Deviation DOWN",
+    "gp": 3500,
+    "pr": 200,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "tuujou_tuika",
+      "soutensuuup",
+      "tuujou_iryokuup",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kantuu_lv1_tuika",
+      "kantuu_lv12_tuika",
+      "handoukeigen+1",
+      "rensya"
+    ],
+    "id": "burehabadown"
+  },
+  {
+    "name": "Precision +2",
+    "gp": 6500,
+    "pr": 200,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "tuujou_tuika",
+      "soutensuuup",
+      "kougekiup_1",
+      "kougekiup_2",
+      "tuujou_tuika",
+      "tuujou_iryokuup",
+      "kantuu_lv1_tuika",
+      "kantuu_lv12_tuika",
+      "handoukeigen+1",
+      "rensya",
+      "burehabadown",
+      "handoukeigen+2",
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "neraiuchi"
+  },
+  {
+    "name": "Recoil +1",
+    "gp": 2800,
+    "pr": 100,
+    "requirements": [
+      "kantuu_lv1_tuika",
+      "kantuu_lv12_tuika"
+    ],
+    "id": "handoukeigen+1"
+  },
+  {
+    "name": "Recoil +2",
+    "gp": 6000,
+    "pr": 150,
+    "requirements": [
+      "kantuu_lv1_tuika",
+      "kantuu_lv12_tuika",
+      "handoukeigen+1"
+    ],
+    "id": "handoukeigen+2"
+  },
+  {
+    "name": "Fire Res +10",
+    "gp": 200,
+    "pr": 10,
+    "id": "hitaisei+10"
+  },
+  {
+    "name": "Water Res +10",
+    "gp": 200,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "mizutaisei+10"
+  },
+  {
+    "name": "Ice Res +10",
+    "gp": 200,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "kooritaisei+10"
+  },
+  {
+    "name": "Thunder Res +10",
+    "gp": 200,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "kaminaritaisei+10"
+  },
+  {
+    "name": "Dragon Res +10",
+    "gp": 200,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "ryuutaisei+10"
+  },
+  {
+    "name": "Fire Res +20",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "hitaisei+10"
+    ],
+    "id": "hitaisei+20"
+  },
+  {
+    "name": "Water Res +20",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "mizutaisei+10"
+    ],
+    "id": "mizutaisei+20"
+  },
+  {
+    "name": "Ice Res +20",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "kooritaisei+10"
+    ],
+    "id": "kooritaisei+20"
+  },
+  {
+    "name": "Thunder Res +20",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "kaminaritaisei+10"
+    ],
+    "id": "kaminaritaisei+20"
+  },
+  {
+    "name": "Dragon Res +20",
+    "gp": 800,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "ryuutaisei+10"
+    ],
+    "id": "ryuutaisei+20"
+  },
+  {
+    "name": "Fire Res +30",
+    "gp": 2500,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "hitaisei+10",
+      "hitaisei+20"
+    ],
+    "id": "hitaisei+30"
+  },
+  {
+    "name": "Water Res +30",
+    "gp": 2500,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "mizutaisei+10",
+      "mizutaisei+20"
+    ],
+    "id": "mizutaisei+30"
+  },
+  {
+    "name": "Ice Res +30",
+    "gp": 2500,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "kooritaisei+10",
+      "kooritaisei+20"
+    ],
+    "id": "kooritaisei+30"
+  },
+  {
+    "name": "Thunder Res +30",
+    "gp": 2500,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "kaminaritaisei+10",
+      "kaminaritaisei+20"
+    ],
+    "id": "kaminaritaisei+30"
+  },
+  {
+    "name": "Dragon Res +30",
+    "gp": 2500,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "ryuutaisei+10",
+      "ryuutaisei+20"
+    ],
+    "id": "ryuutaisei+30"
+  },
+  {
+    "name": "All Res +5",
+    "gp": 500,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "hitaisei+10",
+      "mizutaisei+10",
+      "kooritaisei+10",
+      "kaminaritaisei+10",
+      "ryuutaisei+10"
+    ],
+    "id": "kakutaisei+5"
+  },
+  {
+    "name": "All Res +10",
+    "gp": 3500,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "hitaisei+10",
+      "mizutaisei+10",
+      "kooritaisei+10",
+      "kaminaritaisei+10",
+      "ryuutaisei+10",
+      "kakutaisei+5"
+    ],
+    "id": "kakutaisei+10"
+  },
+  {
+    "name": "All Res +20",
+    "gp": 6500,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "hitaisei+10",
+      "mizutaisei+10",
+      "kooritaisei+10",
+      "kaminaritaisei+10",
+      "ryuutaisei+10",
+      "kakutaisei+5",
+      "kakutaisei+10",
+      "hinaritaisei+20",
+      "mizunaritaisei+20",
+      "koorinaritaisei+20",
+      "kaminarinaritaisei+20",
+      "ryuunaritaisei+20",
+      "bougyo+20"
+    ],
+    "id": "kakutaisei+20"
+  },
+  {
+    "name": "Paralysis Halved",
+    "gp": 300,
+    "pr": 10,
+    "id": "mahihangen"
+  },
+  {
+    "name": "Poison Halved",
+    "gp": 300,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20"
+    ],
+    "id": "dokuhangen"
+  },
+  {
+    "name": "Sleep Halved",
+    "gp": 300,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20"
+    ],
+    "id": "suiminhangen"
+  },
+  {
+    "name": "Paralysis Negated",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "mahihangen"
+    ],
+    "id": "mahimukou"
+  },
+  {
+    "name": "Poison Negated",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen"
+    ],
+    "id": "dokumukou"
+  },
+  {
+    "name": "Sleep Negated",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "suiminhangen"
+    ],
+    "id": "suiminmukou"
+  },
+  {
+    "name": "Status Halved",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen"
+    ],
+    "id": "joutaiijouhangen"
+  },
+  {
+    "name": "Status Immunity",
+    "gp": 5000,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen",
+      "dokumukou",
+      "suiminmukou",
+      "mahimukou"
+    ],
+    "id": "joutaiijoumukou"
+  },
+  {
+    "name": "Stun Halved",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen"
+    ],
+    "id": "kizetuhangen"
+  },
+  {
+    "name": "Stun Negated",
+    "gp": 2000,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen",
+      "kizetuhangen"
+    ],
+    "id": "kizetumukou"
+  },
+  {
+    "name": "Anti-Def Down",
+    "gp": 3000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "dokumukou",
+      "suiminmukou",
+      "mahimukou"
+    ],
+    "id": "tetumenhi"
+  },
+  {
+    "name": "Deoderant",
+    "gp": 500,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "dassyuu"
+  },
+  {
+    "name": "Snow Ball Res",
+    "gp": 500,
+    "pr": 30,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "taisetu"
+  },
+  {
+    "name": "Crystal Res",
+    "gp": 3000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "dokumukou",
+      "suiminmukou",
+      "mahimukou",
+      "///ダメージ保護系"
+    ],
+    "id": "kessyoutaisei"
+  },
+  {
+    "name": "Quake Res +1",
+    "gp": 500,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "taishin_1"
+  },
+  {
+    "name": "Quake Res +2",
+    "gp": 3500,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1"
+    ],
+    "id": "taishin_2"
+  },
+  {
+    "name": "Earplugs",
+    "gp": 100,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "mimisen_1"
+  },
+  {
+    "name": "HG Earplugs",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "mimisen_1"
+    ],
+    "id": "mimisen_2"
+  },
+  {
+    "name": "Super HG Earplugs",
+    "gp": 6500,
+    "pr": 150,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "mimisen_1",
+      "mimisen_2"
+    ],
+    "id": "mimisen_3"
+  },
+  {
+    "name": "Wind Pressure (S)",
+    "gp": 100,
+    "pr": 10,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30"
+    ],
+    "id": "huuatu_1"
+  },
+  {
+    "name": "Wind Pressure (L)",
+    "gp": 1000,
+    "pr": 50,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "huuatu_1"
+    ],
+    "id": "huuatu_2"
+  },
+  {
+    "name": "Dragon Wind Breaker",
+    "gp": 2800,
+    "pr": 150,
+    "id": "huuatu_3"
+  },
+  {
+    "name": "Violent Wind Breaker",
+    "gp": 6500,
+    "pr": 300,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "huuatu_1",
+      "huuatu_2",
+      "huuatu_3"
+    ],
+    "id": "huuatu_4"
+  },
+  {
+    "name": "Evade +1",
+    "gp": 3000,
+    "pr": 100,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3"
+    ],
+    "id": "kaihi_1"
+  },
+  {
+    "name": "Evade +2",
+    "gp": 6500,
+    "pr": 150,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1"
+    ],
+    "id": "kaihi_2"
+  },
+  {
+    "name": "Passive",
+    "gp": 3500,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1"
+    ],
+    "id": "ukemi"
+  },
+  {
+    "name": "Guts",
+    "gp": 3000,
+    "pr": 100,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50"
+    ],
+    "id": "konjou_1"
+  },
+  {
+    "name": "Great Guts",
+    "gp": 4800,
+    "pr": 300,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "konjou_1",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30"
+    ],
+    "id": "konjou_2"
+  },
+  {
+    "name": "True Guts",
+    "gp": 8500,
+    "pr": 500,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "bougyo+60",
+      "bougyo+90",
+      "bougyo+120",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "konjou_1",
+      "konjou_2",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30"
+    ],
+    "id": "konjou_3"
+  },
+  {
+    "name": "Divine Protection",
+    "gp": 4000,
+    "pr": 300,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "kaihi_2",
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "konjou_1",
+      "konjou_2",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30"
+    ],
+    "id": "megami_1"
+  },
+  {
+    "name": "Goddness' Embrace",
+    "gp": 8000,
+    "pr": 500,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "kaihi_2",
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "konjou_1",
+      "konjou_2",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "megami_1"
+    ],
+    "id": "megami_2"
+  },
+  {
+    "name": "Unaffected +1",
+    "gp": 15000,
+    "pr": 999,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mimisen_1",
+      "huuatu_1"
+    ],
+    "id": "gouhou_1"
+  },
+  {
+    "name": "Unaffected +2",
+    "gp": 25000,
+    "pr": 999,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mimisen_1",
+      "huuatu_1",
+      "taishin_2",
+      "mimisen_2",
+      "huuatu_2",
+      "huuatu_3",
+      "gouhou_1"
+    ],
+    "id": "gouhou_2"
+  },
+  {
+    "name": "Unaffected +3",
+    "gp": 35000,
+    "pr": 999,
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mimisen_1",
+      "huuatu_1",
+      "taishin_2",
+      "mimisen_2",
+      "huuatu_2",
+      "huuatu_3",
+      "gouhou_1",
+      "huuatu_4",
+      "mimisen_3",
+      "gouhou_2"
+    ],
+    "id": "gouhou_3"
+  },
+  {
+    "name": "Item Duration Extended",
+    "gp": 6500,
+    "pr": 100,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem"
+    ],
+    "id": "itemkyoka"
+  },
+  {
+    "name": "Wide Area +1",
+    "gp": 1500,
+    "pr": 100,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "itemkyoka"
+    ],
+    "id": "kouikika+1"
+  },
+  {
+    "name": "Wide Area +2",
+    "gp": 3000,
+    "pr": 150,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "itemkyoka",
+      "kouikika+1"
+    ],
+    "id": "kouikika+2"
+  },
+  {
+    "name": "Trap Expert",
+    "gp": 3000,
+    "pr": 100,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "itemkyoka",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki"
+    ],
+    "id": "wanashi"
+  },
+  {
+    "name": "Trap Master",
+    "gp": 6500,
+    "pr": 150,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "itemkyoka",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "wanashi"
+    ],
+    "id": "wanatakumi"
+  },
+  {
+    "name": "Throwing Distance UP",
+    "gp": 1200,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki"
+    ],
+    "id": "touteki"
+  },
+  {
+    "name": "Throwing Knives +1",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "touteki"
+    ],
+    "id": "slowing"
+  },
+  {
+    "name": "Strong Arm +1",
+    "gp": 2500,
+    "pr": 100,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "touteki"
+    ],
+    "id": "kyouken+1"
+  },
+  {
+    "name": "Strong Arm +2",
+    "gp": 4300,
+    "pr": 150,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "touteki",
+      "kyouken+1"
+    ],
+    "id": "kyouken+2"
+  },
+  {
+    "name": "Iron Arm +1",
+    "gp": 10000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "touteki",
+      "slowing",
+      "kyouken+1"
+    ],
+    "id": "tetuwan+1"
+  },
+  {
+    "name": "Iron Arm +2",
+    "gp": 15000,
+    "pr": 999,
+    "requirements": [
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "touteki",
+      "slowing",
+      "kyouken+1",
+      "kyouken+2",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "itemkyoka",
+      "tetuwan+1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1"
+    ],
+    "id": "tetuwan+2"
+  },
+  {
+    "name": "Sneak",
+    "gp": 2000,
+    "pr": 100,
+    "id": "onmitu"
+  },
+  {
+    "name": "Taunt",
+    "gp": 2000,
+    "pr": 100,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "fuefukimeijin",
+      "onmitu"
+    ],
+    "id": "chouhatu"
+  },
+  {
+    "name": "Incitement",
+    "gp": 30000,
+    "pr": 500,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "kaihi_2",
+      "fuefukimeijin",
+      "bougyo+20",
+      "bougyo+30",
+      "guard+1",
+      "bougyo+60",
+      "bougyo+90",
+      "guard+2",
+      "bougyo+120",
+      "taishin_1",
+      "ukemi",
+      "onmitu",
+      "chouhatu"
+    ],
+    "id": "sendou"
+  },
+  {
+    "name": "Bond",
+    "gp": 2300,
+    "pr": 50,
+    "id": "kizuna"
+  },
+  {
+    "name": "Caring+1",
+    "gp": 3000,
+    "pr": 100,
+    "requirements": [
+      "kizuna",
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "ukemi",
+      "konjou_1",
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen",
+      "kizetuhangen",
+      "kizetumukou"
+    ],
+    "id": "itawari+1"
+  },
+  {
+    "name": "Compensation",
+    "gp": 30000,
+    "pr": 999,
+    "requirements": [
+      "toishi",
+      "kenjutu+1",
+      "bukisabaki",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kenjutu+2",
+      "togitakumi",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3",
+      "kougekiup_4",
+      "kougekiup_5",
+      "tairyoku+10",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "kajiba_2",
+      "kireaji+1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "mikiri_4",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "kaihi_2"
+    ],
+    "id": "daisyou"
+  },
+  {
+    "name": "Blue Soul",
+    "gp": 6500,
+    "pr": 999,
+    "requirements": [
+      "//ド根性",
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "konjou_1",
+      "konjou_2",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "///防御",
+      "bougyo+20",
+      "bougyo+30",
+      "bougyo+60",
+      "///状態異常半減",
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen"
+    ],
+    "id": "aokon"
+  },
+  {
+    "name": "Red Soul",
+    "gp": 6500,
+    "pr": 999,
+    "requirements": [
+      "///ド根性",
+      "bougyo+20",
+      "bougyo+30",
+      "taishin_1",
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "kaihi_1",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40",
+      "tairyoku+50",
+      "konjou_1",
+      "konjou_2",
+      "tairyoku-10",
+      "tairyoku-20",
+      "tairyoku-30",
+      "//気絶無効",
+      "bougyo+20",
+      "dokuhangen",
+      "suiminhangen",
+      "mahihangen",
+      "joutaiijouhangen",
+      "kizetuhangen",
+      "kizetumukou",
+      "///攻撃",
+      "kougekiup_1",
+      "kougekiup_2",
+      "kougekiup_3"
+    ],
+    "id": "akakon"
+  },
+  {
+    "name": "Movement Speed +1",
+    "gp": 10000,
+    "pr": 999,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "hayagui"
+    ],
+    "id": "idouup_1"
+  },
+  {
+    "name": "Movement Speed +2",
+    "gp": 15000,
+    "pr": 999,
+    "requirements": [
+      "mikiri_1",
+      "mikiri_2",
+      "mikiri_3",
+      "bukisabaki",
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyokuitem",
+      "hayagui",
+      "idouup_1",
+      "bougyo+20",
+      "bougyo+30",
+      "huuatu_1",
+      "huuatu_2",
+      "huuatu_3",
+      "huuatu_4"
+    ],
+    "id": "idouup_2"
+  },
+  {
+    "gp": 10,
+    "pr": 0,
+    "id": "tairyoku+10"
+  },
+  {
+    "gp": 100,
+    "pr": 0,
+    "requirements": [
+      "tairyoku+10"
+    ],
+    "id": "tairyoku+20"
+  },
+  {
+    "gp": 400,
+    "pr": 10,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20"
+    ],
+    "id": "tairyoku+30"
+  },
+  {
+    "gp": 2500,
+    "pr": 30,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30"
+    ],
+    "id": "tairyoku+40"
+  },
+  {
+    "gp": 6000,
+    "pr": 50,
+    "requirements": [
+      "tairyoku+10",
+      "tairyoku+20",
+      "tairyoku+30",
+      "tairyoku+40"
+    ],
+    "id": "tairyoku+50"
+  },
+  {
+    "requirements": [
+      "hitaisei+10"
+    ],
+    "id": "hizokuseikyouka_1\""
+  },
+  {
+    "requirements": [
+      "bougyo+20",
+      "bougyo+30",
+      "huuatu_1",
+      "huuatu_2"
+    ],
+    "id": "huuatu+_"
+  }
+]
