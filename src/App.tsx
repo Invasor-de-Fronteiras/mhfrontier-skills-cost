@@ -3,24 +3,19 @@ import { useMemo, useState } from "react";
 import data from "./data/data.json";
 import { getChildren, isChild, sumGP } from "./utils/util";
 
-const showId = true;
+const showId = false;
 function App() {
   const [selected, setSelected] = useState<number[]>([]);
 
-  const handleToggle = (...ids: number[]) => {
+  const handleToggle = (id: number) => {
     setSelected((v) => {
       const arr = new Set(v);
 
-      // first is parent, rest are dependents
-      const shouldDelete = arr.has(ids[0]);
-
-      for (const id of ids) {
-        if (shouldDelete) {
-          //TODO Check if some depend on it, if yes, remove dependents.
-          arr.delete(id);
-        } else {
-          arr.add(id);
-        }
+      const shouldDelete = arr.has(id);
+      if (shouldDelete) {
+        arr.delete(id);
+      } else {
+        arr.add(id);
       }
 
       return [...arr];
@@ -76,12 +71,14 @@ function App() {
                       <input
                         type="checkbox"
                         checked={isSelected}
-                        onChange={() => handleToggle(skill.id)}
+                        onChange={(e) => handleToggle(skill.id)}
                       />
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      {skill.id}
-                    </td>
+                    {showId && (
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        {skill.id}
+                      </td>
+                    )}
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       <a
                         id={skill.name}
