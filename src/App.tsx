@@ -112,9 +112,9 @@ function App() {
                         <ul className="flex flex-row flex-wrap requirements-list gap-1">
                           {getChildren(skill.id, false, true).map((r) => {
                             return (
-                              <li key={r.id} className="after:content-[',']">
+                              <li key={r.id} className="after:content-[','] last:after:content-none">
                                 <a
-                                  className="hover:underline hover:cursor-pointer "
+                                  className="hover:underline hover:cursor-pointer"
                                   href={"#" + r.name}
                                 >
                                   {r.name} {showId && `(${r.id})`}
@@ -124,7 +124,7 @@ function App() {
                           })}
                           {getChildren(skill.id, true, false).map((r) => {
                             return (
-                              <li key={r.id} className="after:content-[',']">
+                              <li key={r.id} className="after:content-[','] last:after:content-none">
                                 <a
                                   className="hover:underline hover:cursor-pointer text-orange-700"
                                   href={"#" + r.name}
