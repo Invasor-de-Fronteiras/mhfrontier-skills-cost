@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import { useMemo, useState } from "react";
 import data from "./data/data.json";
-import { getChildren } from "./utils/util";
+import { getChildren, isChild, sumGP } from "./utils/util";
 
 const showId = true;
 function App() {
@@ -26,17 +27,7 @@ function App() {
     });
   };
 
-  const gpCost = useMemo(() => {
-    let gp = 0;
-
-    for (const id of selected) {
-      const item = data.find((i) => i.id === id);
-      if (item && item.gp) {
-        gp += item.gp;
-      }
-    }
-    return gp;
-  }, [selected]);
+  const gpCost = useMemo(() => sumGP(selected), [selected]);
 
   return (
     <>
@@ -72,6 +63,9 @@ function App() {
             </thead>
             <tbody>
               {data.map((skill) => {
+                const isSelected = selected.includes(skill.id);
+                const isChildren = isChild(selected, skill.id);
+
                 return (
                   <tr
                     key={skill.id}
@@ -81,10 +75,8 @@ function App() {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 cursor-pointer">
                       <input
                         type="checkbox"
-                        checked={selected.includes(skill.id)}
-                        onClick={() =>
-                          handleToggle(skill.id, ...(skill.requirements ?? []))
-                        }
+                        checked={isSelected}
+                        onChange={() => handleToggle(skill.id)}
                       />
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
@@ -93,7 +85,13 @@ function App() {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       <a
                         id={skill.name}
-                        className="hover:cursor-pointer hover:underline"
+                        className={classNames(
+                          "hover:cursor-pointer hover:underline",
+                          {
+                            "text-orange-700": isChildren,
+                            "text-green-500": isSelected,
+                          }
+                        )}
                         href={"#" + skill.name}
                       >
                         {skill.name}
@@ -110,9 +108,15 @@ function App() {
                         "None"
                       ) : (
                         <ul className="flex flex-row flex-wrap requirements-list gap-1">
-                          {getChildren(skill.id, false, true).map((r) => {
+                          {getChildren(skill.id, {
+                            recursive: false,
+                            shouldReturnParentsRequirements: true,
+                          }).map((r) => {
                             return (
-                              <li key={r.id} className="after:content-[','] last:after:content-none">
+                              <li
+                                key={r.id}
+                                className="after:content-[','] last:after:content-none"
+                              >
                                 <a
                                   className="hover:underline hover:cursor-pointer"
                                   href={"#" + r.name}
@@ -122,9 +126,15 @@ function App() {
                               </li>
                             );
                           })}
-                          {getChildren(skill.id, true, false).map((r) => {
+                          {getChildren(skill.id, {
+                            recursive: true,
+                            shouldReturnParentsRequirements: false,
+                          }).map((r) => {
                             return (
-                              <li key={r.id} className="after:content-[','] last:after:content-none">
+                              <li
+                                key={r.id}
+                                className="after:content-[','] last:after:content-none"
+                              >
                                 <a
                                   className="hover:underline hover:cursor-pointer text-orange-700"
                                   href={"#" + r.name}
