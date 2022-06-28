@@ -164,3 +164,5 @@ export const getParents = (parents: number[], childId: number): number[] => {
 
   return [...res];
 };
+
+export const categories: string[] = [...data.reduce((acc, v) => acc.add(v.type), new Set<string>())]
