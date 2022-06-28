@@ -63,6 +63,9 @@ function App() {
                 <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                   PR
                 </th>
+                <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
+                  Requirements
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -70,25 +73,53 @@ function App() {
                 return (
                   <tr
                     key={skill.id}
-                    className="border-b  transition duration-300 ease-in-out hover:bg-gray-100 cursor-pointer"
-                    onClick={() =>
-                      handleToggle(skill.id, ...(skill.requirements ?? []))
-                    }
+                    className="border-b  transition duration-300 ease-in-out hover:bg-gray-100"
+                    id={skill.id}
                   >
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 cursor-pointer">
                       <input
                         type="checkbox"
                         checked={selected.includes(skill.id)}
+                        onClick={() =>
+                          handleToggle(skill.id, ...(skill.requirements ?? []))
+                        }
                       />
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                      {skill.name}
+                      <a
+                        id={skill.name}
+                        className="hover:cursor-pointer hover:underline"
+                        href={"#" + skill.name}
+                      >
+                        {skill.name}
+                      </a>
                     </td>
                     <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                       {skill.gp}
                     </td>
                     <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                       {skill.pr}
+                    </td>
+                    <td className="text-sm text-gray-900 font-light px-6 py-4 text-left whitespace-nowrap">
+                      {!skill.requirements?.length ? (
+                        "None"
+                      ) : (
+                        <ul className="flex flex-row flex-wrap gap-1">
+                          {skill.requirements?.map((r) => {
+                            const req = data.find((i) => i.id === r);
+                            const reqName = req?.name ?? r;
+
+                            return (
+                              <a
+                                className="hover:underline hover:cursor-pointer"
+                                href={"#" + reqName}
+                              >
+                                {reqName}
+                              </a>
+                            );
+                          })}
+                        </ul>
+                      )}
                     </td>
                   </tr>
                 );
