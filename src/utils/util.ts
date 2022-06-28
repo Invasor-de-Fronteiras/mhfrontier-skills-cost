@@ -1,4 +1,4 @@
-import data from '../data/data.json';
+import data from "../data/data.json";
 
 interface Skill {
   name: string;
@@ -6,19 +6,20 @@ interface Skill {
   pr: number;
   requirements: string[];
   id: number;
-  
 }
 
-function getChildrenIds(parentId: number): number[] {
+function getChildrenIds(parentId: number, recursive: boolean = true): number[] {
   const children = new Set<number>();
 
-  const skill = data.find(s => s.id === parentId);
+  const skill = data.find((s) => s.id === parentId);
   const requirements = skill?.requirements ?? [];
   for (const req of requirements) {
     children.add(req);
 
-    for (const child of getChildrenIds(req)) {
-      children.add(child);
+    if (recursive) {
+      for (const child of getChildrenIds(req)) {
+        children.add(child);
+      }
     }
   }
 
@@ -35,15 +36,15 @@ export function getChildren(parentId: number): Skill[] {
   const res: Skill[] = [];
 
   for (const child of children) {
-    const skill = data.find(s => s.id === child);
+    const skill = data.find((s) => s.id === child);
 
     if (!skill) {
-      console.error('skill not found', child);
+      console.error("skill not found", child);
 
       continue;
     }
 
-     // TODO remove this when add all data
+    // TODO remove this when add all data
     // @ts-ignore
     res.push(skill);
   }

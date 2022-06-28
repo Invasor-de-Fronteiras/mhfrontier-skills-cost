@@ -12,7 +12,6 @@
     "name": "Health-20",
     "gp": 200,
     "requirements": [
-      150,
       1
     ],
     "id": 2,
@@ -22,29 +21,25 @@
     "name": "Health-30",
     "gp": 400,
     "requirements": [
-      150,
-      1,
       2
     ],
     "id": 3,
     "type": "Health and Stamina"
   },
   {
-    "name": "Eating",
+    "name": "Speed Eating",
     "gp": 3000,
     "requirements": [
-      150,
-      151,
-      5
+      5,
+      153
     ],
     "id": 4,
     "type": "Health and Stamina"
   },
   {
-    "name": "Recovery Itens UP",
+    "name": "Improve Recovery Items",
     "gp": 4000,
     "requirements": [
-      150,
       151
     ],
     "id": 5,
@@ -54,7 +49,9 @@
     "name": "Herbal Medicine",
     "gp": 30000,
     "requirements": [
-      0
+      4,
+      131,
+      33
     ],
     "id": 6,
     "type": "Health and Stamina"
@@ -63,7 +60,7 @@
     "name": "Atk UP (S)",
     "gp": 10,
     "requirements": [
-      0
+      
     ],
     "id": 7,
     "type": "Offense"
@@ -81,8 +78,7 @@
     "name": "Atk UP (L)",
     "gp": 400,
     "requirements": [
-      7,
-      8
+    8
     ],
     "id": 9,
     "type": "Offense"
@@ -91,8 +87,7 @@
     "name": "Atk UP (XL)",
     "gp": 2500,
     "requirements": [
-      7,
-      8,
+    
       9
     ],
     "id": 10,
@@ -102,9 +97,6 @@
     "name": "Atk UP (XXL)",
     "gp": 6000,
     "requirements": [
-      7,
-      8,
-      9,
       10
     ],
     "id": 11,
@@ -114,8 +106,6 @@
     "name": "Strong Attack +1",
     "gp": 8500,
     "requirements": [
-      7,
-      8,
       9
     ],
     "id": 12,
@@ -125,9 +115,7 @@
     "name": "Strong Attack +2",
     "gp": 10000,
     "requirements": [
-      7,
-      8,
-      9,
+      10,
       12
     ],
     "id": 13,
@@ -137,10 +125,7 @@
     "name": "Strong Attack +3",
     "gp": 15000,
     "requirements": [
-      7,
-      8,
-      9,
-      12,
+      11,
       13
     ],
     "id": 14,
@@ -150,12 +135,7 @@
     "name": "Strong Attack +4",
     "gp": 25000,
     "requirements": [
-      7,
-      8,
-      9,
-      12,
-      13,
-      14
+    14
     ],
     "id": 15,
     "type": "Offense"
@@ -164,12 +144,6 @@
     "name": "Strong Attack +5",
     "gp": 40000,
     "requirements": [
-      7,
-      8,
-      9,
-      12,
-      13,
-      14,
       15
     ],
     "id": 16,
@@ -179,7 +153,6 @@
     "name": "Expert +1",
     "gp": 10,
     "requirements": [
-      0
     ],
     "id": 17,
     "type": "Offense"
@@ -197,7 +170,6 @@
     "name": "Expert +3",
     "gp": 400,
     "requirements": [
-      17,
       18
     ],
     "id": 19,
@@ -207,8 +179,6 @@
     "name": "Expert +4",
     "gp": 2500,
     "requirements": [
-      17,
-      18,
       19
     ],
     "id": 20,
@@ -218,9 +188,6 @@
     "name": "Expert +5",
     "gp": 6000,
     "requirements": [
-      17,
-      18,
-      19,
       20
     ],
     "id": 21,
@@ -230,13 +197,7 @@
     "name": "Adrenaline +1",
     "gp": 1200,
     "requirements": [
-      7,
-      8,
-      9,
-      10,
-      150,
-      1,
-      2
+     1,10
     ],
     "id": 22,
     "type": "Offense"
@@ -245,14 +206,8 @@
     "name": "Adrenaline +2",
     "gp": 8500,
     "requirements": [
-      7,
-      8,
-      9,
-      10,
+      22,
       11,
-      150,
-      1,
-      2,
       3
     ],
     "id": 23,
@@ -262,30 +217,9 @@
     "name": "Exploit Weakness",
     "gp": 40000,
     "requirements": [
-      7,
-      8,
-      9,
-      12,
-      13,
-      17,
-      18,
-      19,
-      20,
-      28,
-      29,
-      57,
-      59,
-      30,
-      60,
-      58,
       61,
-      10,
-      11,
-      150,
-      1,
-      2,
-      3,
-      23
+      13,
+      29
     ],
     "id": 24,
     "type": "Offense"
@@ -294,18 +228,16 @@
     "name": "Gunnery",
     "gp": 1000,
     "requirements": [
-      7,
-      8
+      8,
+      37
     ],
     "id": 25,
     "type": "Offense"
   },
   {
-    "name": "Gunnery Expert",
+    "name": "Gunnery King",
     "gp": 3500,
     "requirements": [
-      7,
-      8,
       25
     ],
     "id": 26,
@@ -315,10 +247,8 @@
     "name": "Gunnery God",
     "gp": 8000,
     "requirements": [
-      7,
-      8,
-      25,
-      26
+      26,
+      42
     ],
     "id": 27,
     "type": "Offense"
@@ -327,9 +257,6 @@
     "name": "Focus +1",
     "gp": 2500,
     "requirements": [
-      17,
-      18,
-      19,
       20
     ],
     "id": 28,
@@ -339,10 +266,6 @@
     "name": "Focus +2",
     "gp": 4800,
     "requirements": [
-      17,
-      18,
-      19,
-      20,
       28
     ],
     "id": 29,
@@ -352,8 +275,6 @@
     "name": "Weapon Handling",
     "gp": 3000,
     "requirements": [
-      17,
-      18,
       19
     ],
     "id": 30,
@@ -363,17 +284,7 @@
     "name": "Shiriagari",
     "gp": 25000,
     "requirements": [
-      7,
-      8,
-      9,
-      10,
-      11,
-      17,
-      18,
-      19,
-      20,
-      28,
-      29
+     11,29
     ],
     "id": 31,
     "type": "Offense"
@@ -382,7 +293,6 @@
     "name": "Flute Expert",
     "gp": 2500,
     "requirements": [
-      17,
       18
     ],
     "id": 32,
@@ -392,12 +302,8 @@
     "name": "Encourage +1",
     "gp": 30000,
     "requirements": [
-      17,
-      18,
       32,
-      17,
-      18,
-      19,
+      101,
       118
     ],
     "id": 33,
@@ -407,37 +313,18 @@
     "name": "Encourage +2",
     "gp": 40000,
     "requirements": [
-      17,
-      18,
-      32,
-      17,
-      18,
-      19,
-      118,
-      33,
       119,
-      50,
-      96,
-      97,
-      95,
-      101,
-      99,
-      100,
-      98
+      33,
+      102
     ],
     "id": 34,
     "type": "Offense"
   },
   {
-    "name": "Martial Arts",
+    "name": "Martial Arts+1",
     "gp": 3000,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19
+     9,19
     ],
     "id": 35,
     "type": "Offense"
@@ -446,14 +333,7 @@
     "name": "Martial Arts +2",
     "gp": 5000,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      20,
-      35
+      20,35
     ],
     "id": 36,
     "type": "Offense"
@@ -462,7 +342,7 @@
     "name": "Fire Attack (S)",
     "gp": 300,
     "requirements": [
-      0
+      
     ],
     "id": 37,
     "type": "Offense"
@@ -507,7 +387,6 @@
     "name": "Fire Attack (L)",
     "gp": 800,
     "requirements": [
-      77,
       82,
       37
     ],
@@ -518,7 +397,6 @@
     "name": "Water Attack (L)",
     "gp": 800,
     "requirements": [
-      78,
       83,
       38
     ],
@@ -529,7 +407,6 @@
     "name": "Ice Attack (L)",
     "gp": 800,
     "requirements": [
-      79,
       84,
       39
     ],
@@ -540,7 +417,6 @@
     "name": "Thunder Attack (L)",
     "gp": 800,
     "requirements": [
-      80,
       85,
       40
     ],
@@ -551,7 +427,6 @@
     "name": "Dragon Attack (L)",
     "gp": 800,
     "requirements": [
-      81,
       86,
       41
     ],
@@ -562,21 +437,6 @@
     "name": "Elemental Attack",
     "gp": 4800,
     "requirements": [
-      77,
-      82,
-      37,
-      78,
-      83,
-      38,
-      79,
-      84,
-      39,
-      80,
-      85,
-      40,
-      81,
-      86,
-      41,
       42,
       43,
       44,
@@ -587,34 +447,10 @@
     "type": "Offense"
   },
   {
-    "name": "StatusAttackUp",
+    "name": "Status Attack Up",
     "gp": 4800,
     "requirements": [
-      77,
-      82,
-      37,
-      78,
-      83,
-      38,
-      79,
-      84,
-      39,
-      80,
-      85,
-      40,
-      81,
-      86,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
       47,
-      50,
-      95,
-      96,
-      97,
       101
     ],
     "id": 48,
@@ -624,37 +460,7 @@
     "name": "Drug Knowledge",
     "gp": 9500,
     "requirements": [
-      77,
-      82,
-      37,
-      78,
-      83,
-      38,
-      79,
-      84,
-      39,
-      80,
-      85,
-      40,
-      81,
-      86,
-      41,
-      42,
-      43,
-      44,
-      45,
-      46,
-      47,
-      50,
-      95,
-      96,
-      97,
-      101,
       48,
-      7,
-      8,
-      9,
-      10,
       11
     ],
     "id": 49,
@@ -664,7 +470,7 @@
     "name": "Defense +20",
     "gp": 10,
     "requirements": [
-      0
+      
     ],
     "id": 50,
     "type": "Defensive"
@@ -682,7 +488,7 @@
     "name": "Defense +60",
     "gp": 400,
     "requirements": [
-      50,
+      
       51
     ],
     "id": 52,
@@ -692,8 +498,7 @@
     "name": "Defense +90",
     "gp": 3000,
     "requirements": [
-      50,
-      51,
+   
       52
     ],
     "id": 53,
@@ -703,9 +508,7 @@
     "name": "Defense +120",
     "gp": 6500,
     "requirements": [
-      50,
-      51,
-      52,
+    
       53
     ],
     "id": 54,
@@ -715,7 +518,7 @@
     "name": "Guard +1",
     "gp": 2000,
     "requirements": [
-      50,
+      
       51
     ],
     "id": 55,
@@ -725,10 +528,7 @@
     "name": "Guard +2",
     "gp": 5000,
     "requirements": [
-      50,
-      51,
       55,
-      52,
       53
     ],
     "id": 56,
@@ -738,7 +538,7 @@
     "name": "Speed Sharpening",
     "gp": 2500,
     "requirements": [
-      0
+      
     ],
     "id": 57,
     "type": "Blademaster"
@@ -765,11 +565,7 @@
     "name": "Fencing +2",
     "gp": 8000,
     "requirements": [
-      57,
       59,
-      17,
-      18,
-      19,
       30
     ],
     "id": 60,
@@ -779,24 +575,7 @@
     "name": "Sharpness +1",
     "gp": 9500,
     "requirements": [
-      57,
-      59,
-      30,
-      17,
-      18,
-      19,
-      60,
-      58,
-      7,
-      8,
-      9,
-      10,
-      11,
-      150,
-      1,
-      2,
-      3,
-      23
+      58,23,60
     ],
     "id": 61,
     "type": "Blademaster"
@@ -805,25 +584,7 @@
     "name": "Edge Master +1",
     "gp": 10000,
     "requirements": [
-      57,
-      59,
-      30,
-      17,
-      18,
-      19,
-      60,
-      58,
-      7,
-      8,
-      9,
-      10,
-      11,
-      150,
-      1,
-      2,
-      3,
-      23,
-      61
+     61
     ],
     "id": 62,
     "type": "Blademaster"
@@ -832,25 +593,6 @@
     "name": "Edge Master +2",
     "gp": 15000,
     "requirements": [
-      57,
-      59,
-      30,
-      17,
-      18,
-      19,
-      60,
-      58,
-      7,
-      8,
-      9,
-      10,
-      11,
-      150,
-      1,
-      2,
-      3,
-      23,
-      61,
       62
     ],
     "id": 63,
@@ -860,85 +602,62 @@
     "name": "Edge Master +3",
     "gp": 20000,
     "requirements": [
-      57,
-      59,
-      30,
-      17,
-      18,
-      19,
-      60,
-      58,
-      7,
-      8,
-      9,
-      10,
-      11,
-      150,
-      1,
-      2,
-      3,
-      23,
-      61,
-      62,
-      63,
-      65
+      63
     ],
     "id": 64,
     "type": "Blademaster"
   },
   {
-    "name": "Pierce ShotLv1 Add",
+    "name": "Pierce S UP",
     "gp": 200,
     "requirements": [
-      0
+      66
     ],
     "id": 65,
     "type": "Gunner"
   },
   {
-    "name": "Pierce Shot UP",
+    "name": "Pierce Lv1 Add",
     "gp": 2500,
     "requirements": [
-      0
+      
     ],
     "id": 66,
     "type": "Gunner"
   },
   {
-    "name": "Pierce ShotLv1&2 Add",
+    "name": "Pierce Lv1&2 Add",
     "gp": 600,
     "requirements": [
-      65
+      66
     ],
     "id": 67,
     "type": "Gunner"
   },
   {
-    "name": "Pellet Shot UP",
+    "name": "Pellet S UP",
     "gp": 2500,
     "requirements": [
-      7,
       8
     ],
     "id": 68,
     "type": "Gunner"
   },
   {
-    "name": "Normal ShotAll Add",
+    "name": "Normal S Add",
     "gp": 600,
     "requirements": [
-      7,
+      
       8
     ],
     "id": 69,
     "type": "Gunner"
   },
   {
-    "name": "Normal Shot U",
+    "name": "Normal S UP",
     "gp": 2500,
     "requirements": [
-      7,
-      8,
+      
       69
     ],
     "id": 70,
@@ -948,13 +667,9 @@
     "name": "Auto-Reload",
     "gp": 6000,
     "requirements": [
-      7,
-      8,
-      69,
       70,
-      65,
-      67,
-      75
+      75,
+      72
     ],
     "id": 71,
     "type": "Gunner"
@@ -963,28 +678,16 @@
     "name": "Load UP",
     "gp": 5000,
     "requirements": [
-      7,
-      8,
       69
     ],
     "id": 72,
     "type": "Gunner"
   },
   {
-    "name": "Deviation DOWN",
+    "name": "Precision +1",
     "gp": 3500,
     "requirements": [
-      7,
-      8,
-      69,
-      72,
-      70,
-      7,
-      8,
-      65,
-      67,
-      75,
-      71
+     71
     ],
     "id": 73,
     "type": "Gunner"
@@ -993,22 +696,7 @@
     "name": "Precision +2",
     "gp": 6500,
     "requirements": [
-      7,
-      8,
-      69,
-      72,
-      7,
-      8,
-      69,
-      70,
-      65,
-      67,
-      75,
-      71,
-      73,
-      76,
-      50,
-      51
+     76,73
     ],
     "id": 74,
     "type": "Gunner"
@@ -1018,7 +706,7 @@
     "gp": 2800,
     "requirements": [
       65,
-      67
+      68
     ],
     "id": 75,
     "type": "Gunner"
@@ -1027,8 +715,7 @@
     "name": "Recoil +2",
     "gp": 6000,
     "requirements": [
-      65,
-      67,
+     71,
       75
     ],
     "id": 76,
@@ -1038,7 +725,7 @@
     "name": "Fire Res +10",
     "gp": 200,
     "requirements": [
-      0
+      51
     ],
     "id": 77,
     "type": "Resistences"
@@ -1047,7 +734,7 @@
     "name": "Water Res +10",
     "gp": 200,
     "requirements": [
-      50,
+      
       51
     ],
     "id": 78,
@@ -1057,7 +744,7 @@
     "name": "Ice Res +10",
     "gp": 200,
     "requirements": [
-      50,
+      
       51
     ],
     "id": 79,
@@ -1067,7 +754,7 @@
     "name": "Thunder Res +10",
     "gp": 200,
     "requirements": [
-      50,
+      
       51
     ],
     "id": 80,
@@ -1077,7 +764,7 @@
     "name": "Dragon Res +10",
     "gp": 200,
     "requirements": [
-      50,
+      
       51
     ],
     "id": 81,
@@ -1087,8 +774,7 @@
     "name": "Fire Res +20",
     "gp": 800,
     "requirements": [
-      50,
-      51,
+   
       77
     ],
     "id": 82,
@@ -1098,8 +784,7 @@
     "name": "Water Res +20",
     "gp": 800,
     "requirements": [
-      50,
-      51,
+      
       78
     ],
     "id": 83,
@@ -1109,8 +794,7 @@
     "name": "Ice Res +20",
     "gp": 800,
     "requirements": [
-      50,
-      51,
+    
       79
     ],
     "id": 84,
@@ -1120,8 +804,7 @@
     "name": "Thunder Res +20",
     "gp": 800,
     "requirements": [
-      50,
-      51,
+     
       80
     ],
     "id": 85,
@@ -1131,8 +814,6 @@
     "name": "Dragon Res +20",
     "gp": 800,
     "requirements": [
-      50,
-      51,
       81
     ],
     "id": 86,
@@ -1142,9 +823,7 @@
     "name": "Fire Res +30",
     "gp": 2500,
     "requirements": [
-      50,
-      51,
-      77,
+  
       82
     ],
     "id": 87,
@@ -1154,9 +833,7 @@
     "name": "Water Res +30",
     "gp": 2500,
     "requirements": [
-      50,
-      51,
-      78,
+     
       83
     ],
     "id": 88,
@@ -1166,9 +843,7 @@
     "name": "Ice Res +30",
     "gp": 2500,
     "requirements": [
-      50,
-      51,
-      79,
+    
       84
     ],
     "id": 89,
@@ -1178,9 +853,7 @@
     "name": "Thunder Res +30",
     "gp": 2500,
     "requirements": [
-      50,
-      51,
-      80,
+     
       85
     ],
     "id": 90,
@@ -1190,9 +863,7 @@
     "name": "Dragon Res +30",
     "gp": 2500,
     "requirements": [
-      50,
-      51,
-      81,
+   
       86
     ],
     "id": 91,
@@ -1202,8 +873,6 @@
     "name": "All Res +5",
     "gp": 500,
     "requirements": [
-      50,
-      51,
       77,
       78,
       79,
@@ -1217,13 +886,6 @@
     "name": "All Res +10",
     "gp": 3500,
     "requirements": [
-      50,
-      51,
-      77,
-      78,
-      79,
-      80,
-      81,
       92
     ],
     "id": 93,
@@ -1247,7 +909,7 @@
     "name": "Paralysis Halved",
     "gp": 300,
     "requirements": [
-      0
+      50
     ],
     "id": 95,
     "type": "Status"
@@ -1274,7 +936,6 @@
     "name": "Paralysis Negated",
     "gp": 1000,
     "requirements": [
-      50,
       95
     ],
     "id": 98,
@@ -1284,7 +945,6 @@
     "name": "Poison Negated",
     "gp": 1000,
     "requirements": [
-      50,
       96
     ],
     "id": 99,
@@ -1294,7 +954,6 @@
     "name": "Sleep Negated",
     "gp": 1000,
     "requirements": [
-      50,
       97
     ],
     "id": 100,
@@ -1304,7 +963,6 @@
     "name": "Status Halved",
     "gp": 1000,
     "requirements": [
-      50,
       96,
       97,
       95
@@ -1316,14 +974,10 @@
     "name": "Status Immunity",
     "gp": 5000,
     "requirements": [
-      50,
-      96,
-      97,
-      95,
-      101,
       99,
       100,
-      98
+      98,
+      101
     ],
     "id": 102,
     "type": "Status"
@@ -1332,10 +986,6 @@
     "name": "Stun Halved",
     "gp": 1000,
     "requirements": [
-      50,
-      96,
-      97,
-      95,
       101
     ],
     "id": 103,
@@ -1345,11 +995,6 @@
     "name": "Stun Negated",
     "gp": 2000,
     "requirements": [
-      50,
-      96,
-      97,
-      95,
-      101,
       103
     ],
     "id": 104,
@@ -1359,10 +1004,6 @@
     "name": "Anti-Def Down",
     "gp": 3000,
     "requirements": [
-      50,
-      96,
-      97,
-      95,
       99,
       100,
       98
@@ -1374,17 +1015,15 @@
     "name": "Deoderant",
     "gp": 500,
     "requirements": [
-      50,
       51
     ],
     "id": 106,
     "type": "Status"
   },
   {
-    "name": "Snow Ball Res",
+    "name": "Snowman Res",
     "gp": 500,
     "requirements": [
-      50,
       51
     ],
     "id": 107,
@@ -1405,7 +1044,6 @@
     "name": "Quake Res +1",
     "gp": 500,
     "requirements": [
-      50,
       51
     ],
     "id": 109,
@@ -1415,8 +1053,6 @@
     "name": "Quake Res +2",
     "gp": 3500,
     "requirements": [
-      50,
-      51,
       109
     ],
     "id": 110,
@@ -1426,7 +1062,6 @@
     "name": "Earplugs",
     "gp": 100,
     "requirements": [
-      50,
       51
     ],
     "id": 111,
@@ -1436,8 +1071,6 @@
     "name": "HG Earplugs",
     "gp": 1000,
     "requirements": [
-      50,
-      51,
       111
     ],
     "id": 112,
@@ -1447,9 +1080,6 @@
     "name": "Super HG Earplugs",
     "gp": 6500,
     "requirements": [
-      50,
-      51,
-      111,
       112
     ],
     "id": 113,
@@ -1459,7 +1089,6 @@
     "name": "Wind Pressure (S)",
     "gp": 100,
     "requirements": [
-      50,
       51
     ],
     "id": 114,
@@ -1469,8 +1098,6 @@
     "name": "Wind Pressure (L)",
     "gp": 1000,
     "requirements": [
-      50,
-      51,
       114
     ],
     "id": 115,
@@ -1480,7 +1107,7 @@
     "name": "Dragon Wind Breaker",
     "gp": 2800,
     "requirements": [
-      0
+      115
     ],
     "id": 116,
     "type": "Protection"
@@ -1489,10 +1116,6 @@
     "name": "Violent Wind Breaker",
     "gp": 6500,
     "requirements": [
-      50,
-      51,
-      114,
-      115,
       116
     ],
     "id": 117,
@@ -1502,8 +1125,6 @@
     "name": "Evade +1",
     "gp": 3000,
     "requirements": [
-      17,
-      18,
       19
     ],
     "id": 118,
@@ -1513,9 +1134,6 @@
     "name": "Evade +2",
     "gp": 6500,
     "requirements": [
-      17,
-      18,
-      19,
       118
     ],
     "id": 119,
@@ -1525,13 +1143,8 @@
     "name": "Passive",
     "gp": 3500,
     "requirements": [
-      50,
-      51,
-      109,
-      17,
-      18,
-      19,
-      118
+      118,
+      109
     ],
     "id": 120,
     "type": "Protection"
@@ -1540,18 +1153,8 @@
     "name": "Guts",
     "gp": 3000,
     "requirements": [
-      50,
-      51,
-      109,
-      17,
-      18,
-      19,
-      118,
-      150,
-      151,
-      152,
-      153,
-      154
+      154,
+      120
     ],
     "id": 121,
     "type": "Protection"
@@ -1560,21 +1163,7 @@
     "name": "Great Guts",
     "gp": 4800,
     "requirements": [
-      50,
-      51,
-      109,
-      17,
-      18,
-      19,
-      118,
-      150,
-      151,
-      152,
-      153,
-      154,
       121,
-      1,
-      2,
       3
     ],
     "id": 122,
@@ -1584,26 +1173,8 @@
     "name": "True Guts",
     "gp": 8500,
     "requirements": [
-      50,
-      51,
-      52,
-      53,
-      54,
-      109,
-      17,
-      18,
-      19,
-      118,
-      150,
-      151,
-      152,
-      153,
-      154,
-      121,
       122,
-      1,
-      2,
-      3
+      54
     ],
     "id": 123,
     "type": "Protection"
@@ -1612,28 +1183,8 @@
     "name": "Divine Protection",
     "gp": 4000,
     "requirements": [
-      17,
-      18,
-      19,
-      118,
       119,
-      50,
-      51,
-      109,
-      17,
-      18,
-      19,
-      118,
-      150,
-      151,
-      152,
-      153,
-      154,
-      121,
-      122,
-      1,
-      2,
-      3
+      121
     ],
     "id": 124,
     "type": "Protection"
@@ -1642,28 +1193,6 @@
     "name": "Goddness' Embrace",
     "gp": 8000,
     "requirements": [
-      17,
-      18,
-      19,
-      118,
-      119,
-      50,
-      51,
-      109,
-      17,
-      18,
-      19,
-      118,
-      150,
-      151,
-      152,
-      153,
-      154,
-      121,
-      122,
-      1,
-      2,
-      3,
       124
     ],
     "id": 125,
@@ -1673,11 +1202,9 @@
     "name": "Unaffected +1",
     "gp": 15000,
     "requirements": [
-      50,
-      51,
-      109,
       111,
-      114
+      114,
+      109
     ],
     "id": 126,
     "type": "Protection"
@@ -1686,14 +1213,7 @@
     "name": "Unaffected +2",
     "gp": 25000,
     "requirements": [
-      50,
-      51,
-      109,
-      111,
-      114,
-      110,
       112,
-      115,
       116,
       126
     ],
@@ -1704,19 +1224,10 @@
     "name": "Unaffected +3",
     "gp": 35000,
     "requirements": [
-      50,
-      51,
+      127,
       109,
-      111,
-      114,
-      110,
-      112,
-      115,
-      116,
-      126,
       117,
-      113,
-      127
+      113
     ],
     "id": 128,
     "type": "Protection"
@@ -1725,8 +1236,6 @@
     "name": "Item Duration Extended",
     "gp": 6500,
     "requirements": [
-      150,
-      151,
       5
     ],
     "id": 129,
@@ -1736,9 +1245,6 @@
     "name": "Wide Area +1",
     "gp": 1500,
     "requirements": [
-      150,
-      151,
-      5,
       129
     ],
     "id": 130,
@@ -1748,10 +1254,6 @@
     "name": "Wide Area +2",
     "gp": 3000,
     "requirements": [
-      150,
-      151,
-      5,
-      129,
       130
     ],
     "id": 131,
@@ -1761,17 +1263,8 @@
     "name": "Trap Expert",
     "gp": 3000,
     "requirements": [
-      150,
-      151,
-      5,
-      129,
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30
+      30,
+      129
     ],
     "id": 132,
     "type": "Items"
@@ -1780,17 +1273,6 @@
     "name": "Trap Master",
     "gp": 6500,
     "requirements": [
-      150,
-      151,
-      5,
-      129,
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30,
       132
     ],
     "id": 133,
@@ -1800,12 +1282,7 @@
     "name": "Throwing Distance UP",
     "gp": 1200,
     "requirements": [
-      7,
-      8,
       9,
-      17,
-      18,
-      19,
       30
     ],
     "id": 134,
@@ -1815,13 +1292,6 @@
     "name": "Throwing Knives +1",
     "gp": 2500,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30,
       134
     ],
     "id": 135,
@@ -1831,13 +1301,6 @@
     "name": "Strong Arm +1",
     "gp": 2500,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30,
       134
     ],
     "id": 136,
@@ -1847,14 +1310,6 @@
     "name": "Strong Arm +2",
     "gp": 4300,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30,
-      134,
       136
     ],
     "id": 137,
@@ -1864,14 +1319,6 @@
     "name": "Iron Arm +1",
     "gp": 10000,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30,
-      134,
       135,
       136
     ],
@@ -1882,26 +1329,9 @@
     "name": "Iron Arm +2",
     "gp": 15000,
     "requirements": [
-      7,
-      8,
-      9,
-      17,
-      18,
-      19,
-      30,
-      134,
-      135,
-      136,
-      137,
-      150,
-      151,
-      5,
-      129,
       138,
-      17,
-      18,
-      19,
-      118
+      137,
+      129
     ],
     "id": 139,
     "type": "Items"
@@ -1910,7 +1340,7 @@
     "name": "Sneak",
     "gp": 2000,
     "requirements": [
-      0
+      118
     ],
     "id": 140,
     "type": "Map and Detection"
@@ -1919,12 +1349,8 @@
     "name": "Taunt",
     "gp": 2000,
     "requirements": [
-      17,
-      18,
-      19,
-      118,
-      32,
-      140
+      140,
+      32
     ],
     "id": 141,
     "type": "Map and Detection"
@@ -1933,23 +1359,11 @@
     "name": "Incitement",
     "gp": 30000,
     "requirements": [
-      17,
-      18,
-      19,
-      118,
+      141,
       119,
-      32,
-      50,
-      51,
-      55,
-      52,
-      53,
       56,
       54,
-      109,
-      120,
-      140,
-      141
+      120
     ],
     "id": 142,
     "type": "Map and Detection"
@@ -1964,30 +1378,11 @@
     "type": "Other"
   },
   {
-    "name": "Caring+1",
+    "name": "Caring +1",
     "gp": 3000,
     "requirements": [
       143,
-      50,
-      51,
-      109,
-      17,
-      18,
-      19,
-      118,
-      150,
-      151,
-      152,
-      153,
-      154,
-      120,
       121,
-      50,
-      96,
-      97,
-      95,
-      101,
-      103,
       104
     ],
     "id": 144,
@@ -1997,33 +1392,8 @@
     "name": "Compensation",
     "gp": 30000,
     "requirements": [
-      57,
-      59,
-      30,
-      17,
-      18,
-      19,
-      60,
-      58,
-      7,
-      8,
-      9,
-      10,
-      11,
-      150,
-      1,
-      2,
-      3,
-      23,
       61,
-      17,
-      18,
-      19,
       20,
-      17,
-      18,
-      19,
-      118,
       119
     ],
     "id": 145,
@@ -2044,7 +1414,9 @@
     "name": "Red Soul",
     "gp": 6500,
     "requirements": [
-      0
+      122,
+      9,
+      104
     ],
     "id": 147,
     "type": "Other"
@@ -2053,14 +1425,8 @@
     "name": "Movement Speed +1",
     "gp": 10000,
     "requirements": [
-      17,
-      18,
-      19,
-      30,
-      150,
-      151,
-      5,
-      4
+      4,
+      30
     ],
     "id": 148,
     "type": "Other"
@@ -2069,20 +1435,7 @@
     "name": "Movement Speed +2",
     "gp": 15000,
     "requirements": [
-      17,
-      18,
-      19,
-      30,
-      150,
-      151,
-      5,
-      4,
       148,
-      50,
-      51,
-      114,
-      115,
-      116,
       117
     ],
     "id": 149,
@@ -2110,7 +1463,6 @@
     "name": "Health+30",
     "gp": 400,
     "requirements": [
-      150,
       151
     ],
     "id": 152,
@@ -2120,8 +1472,6 @@
     "name": "Health+40",
     "gp": 2500,
     "requirements": [
-      150,
-      151,
       152
     ],
     "id": 153,
@@ -2131,9 +1481,6 @@
     "name": "Health+50",
     "gp": 6000,
     "requirements": [
-      150,
-      151,
-      152,
       153
     ],
     "id": 154,
@@ -2143,7 +1490,9 @@
     "name": "Status Assault",
     "gp": 9500,
     "requirements": [
-      0
+      11,
+      171,
+      48
     ],
     "id": 155,
     "type": "Offense"
@@ -2152,7 +1501,7 @@
     "name": "Bomber",
     "gp": 1000,
     "requirements": [
-      0
+      27
     ],
     "id": 156,
     "type": "Offense"
@@ -2161,7 +1510,8 @@
     "name": "Charge Attack UP +2",
     "gp": 20000,
     "requirements": [
-      0
+      29,
+      158
     ],
     "id": 157,
     "type": "Offense"
@@ -2170,7 +1520,8 @@
     "name": "Charge Attack UP +1",
     "gp": 10000,
     "requirements": [
-      0
+      30,
+      28
     ],
     "id": 158,
     "type": "Offense"
@@ -2179,7 +1530,8 @@
     "name": "Adaptation+2",
     "gp": 20000,
     "requirements": [
-      0
+      160,
+      36
     ],
     "id": 159,
     "type": "Offense"
@@ -2188,34 +1540,39 @@
     "name": "Adaptation+1",
     "gp": 10000,
     "requirements": [
-      0
+      154,
+      61,
+      74
     ],
     "id": 160,
     "type": "Offense"
   },
   {
-    "name": "Issen+3",
+    "name": "Issen +3",
     "gp": 60000,
     "requirements": [
-      0
+      16,
+      162
     ],
     "id": 161,
     "type": "Offense"
   },
   {
-    "name": "Issen+2",
+    "name": "Issen +2",
     "gp": 40000,
     "requirements": [
-      0
+      15,
+      163
     ],
     "id": 162,
     "type": "Offense"
   },
   {
-    "name": "Issen+1",
+    "name": "Issen +1",
     "gp": 20000,
     "requirements": [
-      0
+      14,
+      21
     ],
     "id": 163,
     "type": "Offense"
@@ -2224,7 +1581,7 @@
     "name": "Flash Conversion",
     "gp": 60000,
     "requirements": [
-      0
+      161
     ],
     "id": 164,
     "type": "Offense"
@@ -2233,7 +1590,8 @@
     "name": "Reflect+3",
     "gp": 20000,
     "requirements": [
-      0
+      94,
+      166
     ],
     "id": 165,
     "type": "Defensive"
@@ -2242,7 +1600,8 @@
     "name": "Reflect+2",
     "gp": 10000,
     "requirements": [
-      0
+      93,
+      167
     ],
     "id": 166,
     "type": "Defensive"
@@ -2251,7 +1610,8 @@
     "name": "Reflect+1",
     "gp": 5000,
     "requirements": [
-      0
+      56,
+      54
     ],
     "id": 167,
     "type": "Defensive"
@@ -2260,7 +1620,9 @@
     "name": "Sword God+2",
     "gp": 30000,
     "requirements": [
-      0
+      169,
+      29,
+      123
     ],
     "id": 168,
     "type": "Blademaster"
@@ -2269,7 +1631,9 @@
     "name": "Sword God+1",
     "gp": 15000,
     "requirements": [
-      0
+      61,
+      30,
+      28
     ],
     "id": 169,
     "type": "Blademaster"
@@ -2278,7 +1642,8 @@
     "name": "Steady Hand",
     "gp": 20000,
     "requirements": [
-      0
+      14,
+      74
     ],
     "id": 170,
     "type": "Gunner"
@@ -2287,7 +1652,11 @@
     "name": "Status Immunity (Myriad)",
     "gp": 9500,
     "requirements": [
-      0
+      102,
+      105,
+      108,
+      172,
+      173
     ],
     "id": 171,
     "type": "Status"
@@ -2296,7 +1665,10 @@
     "name": "Blast Res",
     "gp": 3000,
     "requirements": [
-      0
+      99,
+      98,
+      100,
+      106
     ],
     "id": 172,
     "type": "Status"
@@ -2305,7 +1677,10 @@
     "name": "Freeze Res",
     "gp": 3000,
     "requirements": [
-      0
+      99,
+      98,
+      100,
+      107
     ],
     "id": 173,
     "type": "Status"
@@ -2314,7 +1689,8 @@
     "name": "Evade Distance Up",
     "gp": 15000,
     "requirements": [
-      0
+      149,
+      125
     ],
     "id": 174,
     "type": "Protection"
@@ -2323,7 +1699,11 @@
     "name": "Assistance",
     "gp": 9500,
     "requirements": [
-      0
+      144,
+      102,
+      11,
+      54,
+      131
     ],
     "id": 175,
     "type": "Other"
@@ -2332,7 +1712,10 @@
     "name": "Blazing Grace+2",
     "gp": 30000,
     "requirements": [
-      0
+      177,
+      23,
+      42,
+      27
     ],
     "id": 176,
     "type": "Other"
@@ -2341,7 +1724,11 @@
     "name": "Blazing Grace+1",
     "gp": 15000,
     "requirements": [
-      0
+      147,
+      22,
+      37,
+      156,
+      26
     ],
     "id": 177,
     "type": "Other"
@@ -2350,7 +1737,9 @@
     "name": "Drawing Arts+2",
     "gp": 20000,
     "requirements": [
-      0
+      179,
+      168,
+      149
     ],
     "id": 178,
     "type": "Other"
@@ -2359,7 +1748,9 @@
     "name": "Drawing Arts+1",
     "gp": 10000,
     "requirements": [
-      0
+      30,
+      169,
+      119
     ],
     "id": 179,
     "type": "Other"
@@ -2368,7 +1759,9 @@
     "name": "Skilled",
     "gp": 40000,
     "requirements": [
-      0
+      149,
+      123,
+      4
     ],
     "id": 180,
     "type": "Other"

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import data from "./data/data.json";
 import { getChildren } from "./utils/util";
 
+const showId = true;
 function App() {
   const [selected, setSelected] = useState<number[]>([]);
 
@@ -50,6 +51,9 @@ function App() {
                 <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                   #
                 </th>
+               {showId && <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
+                  ID
+                </th>}
                 <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                   Name
                 </th>
@@ -82,6 +86,9 @@ function App() {
                       />
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      {skill.id}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       <a
                         id={skill.name}
                         className="hover:cursor-pointer hover:underline"
@@ -107,7 +114,7 @@ function App() {
                                 className="hover:underline hover:cursor-pointer"
                                 href={"#" + r.name}
                               >
-                                {r.name}
+                                {r.name} {showId && `(${r.id})`}
                               </a>
                             );
                           })}
