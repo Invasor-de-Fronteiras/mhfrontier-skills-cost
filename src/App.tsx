@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import data from "./data/data.json";
+import { getChildren } from "./utils/util";
 
 function App() {
   const [selected, setSelected] = useState<string[]>([]);
@@ -105,16 +106,13 @@ function App() {
                         "None"
                       ) : (
                         <ul className="flex flex-row flex-wrap gap-1">
-                          {skill.requirements?.map((r) => {
-                            const req = data.find((i) => i.id === r);
-                            const reqName = req?.name ?? r;
-
+                          {getChildren(skill.id).map((r) => {
                             return (
                               <a
                                 className="hover:underline hover:cursor-pointer"
-                                href={"#" + reqName}
+                                href={"#" + r.name}
                               >
-                                {reqName}
+                                {r.name}
                               </a>
                             );
                           })}
