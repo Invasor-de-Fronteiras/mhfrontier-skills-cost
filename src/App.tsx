@@ -51,9 +51,11 @@ function App() {
                 <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                   #
                 </th>
-               {showId && <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
-                  ID
-                </th>}
+                {showId && (
+                  <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
+                    ID
+                  </th>
+                )}
                 <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                   Name
                 </th>
@@ -107,15 +109,29 @@ function App() {
                       {!skill.requirements?.length ? (
                         "None"
                       ) : (
-                        <ul className="flex flex-row flex-wrap gap-1">
-                          {getChildren(skill.id).map((r) => {
+                        <ul className="flex flex-row flex-wrap requirements-list gap-1">
+                          {getChildren(skill.id, false, true).map((r) => {
                             return (
-                              <a
-                                className="hover:underline hover:cursor-pointer"
-                                href={"#" + r.name}
-                              >
-                                {r.name} {showId && `(${r.id})`}
-                              </a>
+                              <li key={r.id} className="after:content-[',']">
+                                <a
+                                  className="hover:underline hover:cursor-pointer "
+                                  href={"#" + r.name}
+                                >
+                                  {r.name} {showId && `(${r.id})`}
+                                </a>
+                              </li>
+                            );
+                          })}
+                          {getChildren(skill.id, true, false).map((r) => {
+                            return (
+                              <li key={r.id} className="after:content-[',']">
+                                <a
+                                  className="hover:underline hover:cursor-pointer text-orange-700"
+                                  href={"#" + r.name}
+                                >
+                                  {r.name} {showId && `(${r.id})`}
+                                </a>
+                              </li>
                             );
                           })}
                         </ul>

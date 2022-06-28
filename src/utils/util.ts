@@ -8,13 +8,13 @@ interface Skill {
   id: number;
 }
 
-function getChildrenIds(parentId: number, recursive: boolean = true): number[] {
+function getChildrenIds(parentId: number, recursive= true, withParents = true): number[] {
   const children = new Set<number>();
 
   const skill = data.find((s) => s.id === parentId);
   const requirements = skill?.requirements ?? [];
   for (const req of requirements) {
-    children.add(req);
+   if (withParents) children.add(req);
 
     if (recursive) {
       for (const child of getChildrenIds(req)) {
@@ -30,8 +30,8 @@ function getChildrenIds(parentId: number, recursive: boolean = true): number[] {
  * Returns all requirements for a skill. This includes all requirements of requirements.
  * @param parentId the id of the parent skill
  */
-export function getChildren(parentId: number): Skill[] {
-  const children = getChildrenIds(parentId);
+export function getChildren(parentId: number, recursive = true, withParents = true): Skill[] {
+  const children = getChildrenIds(parentId, recursive, withParents);
 
   const res: Skill[] = [];
 
