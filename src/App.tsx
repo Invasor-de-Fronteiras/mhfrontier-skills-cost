@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import data from "./data/data.json";
 import { categories, getChildren, isChild, sumGP } from "./utils/util";
 
@@ -7,6 +7,7 @@ const showId = false;
 
 function App() {
   const [selected, setSelected] = useState<number[]>([]);
+  const [disables, setDisabled] = useState<number[]>([]);
 
   const handleToggle = (id: number) => {
     setSelected((v) => {
@@ -23,7 +24,26 @@ function App() {
     });
   };
 
-  const gpCost = useMemo(() => sumGP(selected), [selected]);
+  const handleDisable = (id: number) => {
+    setDisabled((v) => {
+      const arr = new Set(v);
+
+      if (arr.has(id)) {
+        arr.delete(id);
+      } else {
+        arr.add(id);
+      }
+
+      return [...arr];
+    });
+  };
+
+  const isDisabled = useCallback(
+    (id: number) => disables.includes(id) || isChild(disables, id),
+    [disables]
+  );
+
+  const gpCost = useMemo(() => sumGP(selected, isDisabled), [selected]);
 
   return (
     <>
@@ -44,6 +64,9 @@ function App() {
                   <tr>
                     <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                       #
+                    </th>
+                    <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
+                      Disabled?
                     </th>
                     {showId && (
                       <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
@@ -71,6 +94,7 @@ function App() {
                     .map((skill) => {
                       const isSelected = selected.includes(skill.id);
                       const isChildren = isChild(selected, skill.id);
+                      const disabled = isDisabled(skill.id);
 
                       return (
                         <tr
@@ -82,7 +106,16 @@ function App() {
                             <input
                               type="checkbox"
                               checked={isSelected}
+                              disabled={disabled}
                               onChange={(e) => handleToggle(skill.id)}
+                            />
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className=""
+                              checked={disables.includes(skill.id)}
+                              onChange={(e) => handleDisable(skill.id)}
                             />
                           </td>
                           {showId && (
@@ -98,6 +131,7 @@ function App() {
                                 {
                                   "text-orange-700": isChildren,
                                   "text-green-500": isSelected,
+                                  "line-through	text-gray-500": disabled,
                                 }
                               )}
                               href={"#" + skill.name}
@@ -131,7 +165,13 @@ function App() {
                                       className="after:content-[','] last:after:content-none"
                                     >
                                       <a
-                                        className="hover:underline hover:cursor-pointer"
+                                        className={classNames(
+                                          "hover:underline hover:cursor-pointer",
+                                          {
+                                            "line-through	text-gray-500":
+                                              disables.includes(r.id),
+                                          }
+                                        )}
                                         href={"#" + r.name}
                                       >
                                         {r.name} {showId && `(${r.id})`}
@@ -149,7 +189,13 @@ function App() {
                                       className="after:content-[','] last:after:content-none"
                                     >
                                       <a
-                                        className="hover:underline hover:cursor-pointer text-orange-700"
+                                        className={classNames(
+                                          "hover:underline hover:cursor-pointer text-orange-700",
+                                          {
+                                            "line-through	text-gray-500":
+                                              isDisabled(r.id),
+                                          }
+                                        )}
                                         href={"#" + r.name}
                                       >
                                         {r.name} {showId && `(${r.id})`}

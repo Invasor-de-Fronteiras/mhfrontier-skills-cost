@@ -94,12 +94,14 @@ function getChildrenIDsByParents(
   return [...ids];
 }
 
-export function sumGP(skillIds: number[]): number {
+export function sumGP(skillIds: number[], isDisabled: (id: number) => boolean): number {
   return getChildrenIDsByParents(skillIds, {
     shouldReturnParent: true,
     recursive: true,
     shouldReturnParentsRequirements: true,
   }).reduce((acc, id) => {
+    if (isDisabled(id)) return acc;
+    
     const skill = data.find((s) => s.id === id);
 
     if (!skill) {
