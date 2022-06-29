@@ -46,301 +46,301 @@
     "gp": 10,
     "requirements": [],
     "id": 7,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Atk UP (M)",
     "gp": 100,
     "requirements": [7],
     "id": 8,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Atk UP (L)",
     "gp": 400,
     "requirements": [8],
     "id": 9,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Atk UP (XL)",
     "gp": 2500,
     "requirements": [9],
     "id": 10,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Atk UP (XXL)",
     "gp": 6000,
     "requirements": [10],
     "id": 11,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Strong Attack +1",
     "gp": 8500,
     "requirements": [9],
     "id": 12,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Strong Attack +2",
     "gp": 10000,
     "requirements": [10, 12],
     "id": 13,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Strong Attack +3",
     "gp": 15000,
     "requirements": [11, 13],
     "id": 14,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Strong Attack +4",
     "gp": 25000,
     "requirements": [14],
     "id": 15,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Strong Attack +5",
     "gp": 40000,
     "requirements": [15],
     "id": 16,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Expert +1",
     "gp": 10,
     "requirements": [],
     "id": 17,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Expert +2",
     "gp": 100,
     "requirements": [17],
     "id": 18,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Expert +3",
     "gp": 400,
     "requirements": [18],
     "id": 19,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Expert +4",
     "gp": 2500,
     "requirements": [19],
     "id": 20,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Expert +5",
     "gp": 6000,
     "requirements": [20],
     "id": 21,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Adrenaline +1",
     "gp": 1200,
     "requirements": [1, 10],
     "id": 22,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Adrenaline +2",
     "gp": 8500,
     "requirements": [22, 11, 3],
     "id": 23,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Exploit Weakness",
     "gp": 40000,
     "requirements": [61, 13, 29],
     "id": 24,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Gunnery",
     "gp": 1000,
     "requirements": [8, 37],
     "id": 25,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Gunnery King",
     "gp": 3500,
     "requirements": [25],
     "id": 26,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Gunnery God",
     "gp": 8000,
     "requirements": [26, 42],
     "id": 27,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Focus +1",
     "gp": 2500,
     "requirements": [20],
     "id": 28,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Focus +2",
     "gp": 4800,
     "requirements": [28],
     "id": 29,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Weapon Handling",
     "gp": 3000,
     "requirements": [19],
     "id": 30,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Shiriagari",
     "gp": 25000,
     "requirements": [11, 29],
     "id": 31,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Flute Expert",
     "gp": 2500,
     "requirements": [18],
     "id": 32,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Encourage +1",
     "gp": 30000,
     "requirements": [32, 101, 118],
     "id": 33,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Encourage +2",
     "gp": 40000,
     "requirements": [119, 33, 102],
     "id": 34,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Martial Arts+1",
     "gp": 3000,
     "requirements": [9, 19],
     "id": 35,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Martial Arts +2",
     "gp": 5000,
     "requirements": [20, 35],
     "id": 36,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Fire Attack (S)",
     "gp": 300,
     "requirements": [],
     "id": 37,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Water Attack (S)",
     "gp": 300,
     "requirements": [78],
     "id": 38,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Ice Attack (S)",
     "gp": 300,
     "requirements": [79],
     "id": 39,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Thunder Attack (S)",
     "gp": 300,
     "requirements": [80],
     "id": 40,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Dragon Attack (S)",
     "gp": 300,
     "requirements": [81],
     "id": 41,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Fire Attack (L)",
     "gp": 800,
     "requirements": [82, 37],
     "id": 42,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Water Attack (L)",
     "gp": 800,
     "requirements": [83, 38],
     "id": 43,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Ice Attack (L)",
     "gp": 800,
     "requirements": [84, 39],
     "id": 44,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Thunder Attack (L)",
     "gp": 800,
     "requirements": [85, 40],
     "id": 45,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Dragon Attack (L)",
     "gp": 800,
     "requirements": [86, 41],
     "id": 46,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Elemental Attack",
     "gp": 4800,
     "requirements": [42, 43, 44, 45, 46],
     "id": 47,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Status Attack Up",
     "gp": 4800,
     "requirements": [47, 101],
     "id": 48,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Drug Knowledge",
     "gp": 9500,
     "requirements": [48, 11],
     "id": 49,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Defense +20",
@@ -1082,70 +1082,70 @@
     "gp": 9500,
     "requirements": [11, 171, 48],
     "id": 155,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Bomber",
     "gp": 1000,
     "requirements": [27],
     "id": 156,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Charge Attack UP +2",
     "gp": 20000,
     "requirements": [29, 158],
     "id": 157,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Charge Attack UP +1",
     "gp": 10000,
     "requirements": [30, 28],
     "id": 158,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Adaptation+2",
     "gp": 20000,
     "requirements": [160, 36],
     "id": 159,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Adaptation+1",
     "gp": 10000,
     "requirements": [154, 61, 74],
     "id": 160,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Issen +3",
     "gp": 60000,
     "requirements": [16, 162],
     "id": 161,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Issen +2",
     "gp": 40000,
     "requirements": [15, 163],
     "id": 162,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Issen +1",
     "gp": 20000,
     "requirements": [14, 21],
     "id": 163,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Flash Conversion",
     "gp": 60000,
     "requirements": [161],
     "id": 164,
-    "type": "Offense"
+    "type": "Offensive"
   },
   {
     "name": "Reflect+3",
