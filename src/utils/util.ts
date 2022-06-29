@@ -33,7 +33,6 @@ function getChildrenIds(
   if (shouldReturnParent) children.add(skill.id);
 
   const requirements = skill?.requirements ?? [];
-  if (parentId === 1) console.log(parentId, requirements);
 
   for (const req of requirements) {
     if (shouldReturnParentsRequirements) children.add(req);

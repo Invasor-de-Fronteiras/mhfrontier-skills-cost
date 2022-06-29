@@ -1,10 +1,12 @@
 import classNames from "classnames";
 import { useContext } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { context } from "./context";
 import data from "./data/data.json";
 import { categories, getChildren, isChild } from "./utils/util";
 
 const showId = false;
+import i18n from "./i18n";
 
 function App() {
   const {
@@ -18,46 +20,50 @@ function App() {
     clearSelected,
   } = useContext(context);
 
+  const { t, i18n } = useTranslation("index");
+
   return (
     <>
       <main className="mx-auto max-w-7xl p-6">
         <h1 className="text-3xl font-bold underline text-center">
-          MHFrontier Skills Cost Simulator!
+          {t("title")}
         </h1>
-        <p className="text-center mt-2 text-sm">
-          This is a simulator for the skills cost of MHFrontier.
-        </p>
-
+        <p className="text-center mt-2 text-sm">{t("description")}</p>
         <h2 className="text-2xl font-bold text-center my-3 md:text-left">
-          How it works?
+          {t("Translations")}
+        </h2>
+        <ul>
+          <li className="underline underline-offset-1 text-blue-400">
+            <span role="button" onClick={() => i18n.changeLanguage("en")}>
+              English
+            </span>
+          </li>
+          <li className="underline underline-offset-1 text-blue-400">
+            <span role="button" onClick={() => i18n.changeLanguage("pt-BR")}>
+              Português (Brasil)
+            </span>
+          </li>
+        </ul>
+        <h2 className="text-2xl font-bold text-center my-3 md:text-left">
+          {t("how-to-use")}
         </h2>
         <p className="text-slate-900">
           <ul className="list-decimal ml-3 space-y-2">
+            <li>{t("how-to-select", { col: "✅" })}</li>
+            <li>{t("how-to-disable", { col: "❌" })}</li>
+            <li>{t("how-to-calculate")}</li>
+            <li>{t("how-to-clear")}</li>
             <li>
-              Select the skills you want to calculate by checking the checkbox
-              in the first column (✅).
-            </li>
-            <li>
-              Turn off skills you don't want to calculate by checking the
-              checkbox in the second column (❌).
-            </li>
-            <li>The result will be shown at the bottom of your screen.</li>
-            <li>
-              You can clear the selected skills and disabled skills by clicking
-              the button at the bottom of your screen.
-            </li>
-            <li>
-              The color of the skills will be changed to indicate whether the
-              skill is selected or disabled.
+              {t("indicators-text")}
               <ul className="list-disc ml-4 font-semibold">
                 <li className="text-green-500">
-                  Green when you selected that skill.
+                  {t("indicators-text-selected")}
                 </li>
                 <li className="text-green-600">
-                  Dark green when that skill is a child of a selected skill.
+                  {t("indicators-text-child-selected")}
                 </li>
                 <li className="text-red-500">
-                  Red when you disabled that skill.
+                  {t("indicators-text-disabled")}
                 </li>
               </ul>
             </li>
@@ -233,14 +239,21 @@ function App() {
       <div className="bg-black fixed z-10 bottom-0 w-full text-white flex flex-wrap  items-center justify-center">
         <div>
           <p className="font-semibold">
-            used so far: <span className="text-red-500">{gpTotal}</span> GP
+            <Trans i18nKey="result-gp" gpTotal={gpTotal} t={t}>
+              used so far:
+              <span className="text-red-500">
+                {/** @ts-ignore */}
+                {{ gpTotal }}
+              </span>{" "}
+              GP
+            </Trans>
           </p>
         </div>
         <button className="border px-2 m-2" onClick={clearSelected}>
-          Reset Checked
+          {t("reset-selected")}
         </button>
         <button className="border px-2 m-2" onClick={clearDisabled}>
-          Reset Disabled
+          {t("reset-disabled")}
         </button>
       </div>
     </>

@@ -1,0 +1,16 @@
+{
+  "title": "MHFrontier Skill Cost Simulator!",
+  "description": "Simulate the cost of skills in MHFrontier.",
+  "how-to-use": "How to use",
+  "how-to-select": "Select the skills you want to calculate by checking the box in the first column ({{col}}).",
+  "how-to-disable": "Disable the skills you don't want to calculate by checking the box in the second column ({{col}}).",
+  "how-to-calculate": "The result will be shown in the bottom of the screen.",
+  "how-to-clear": "You can clear the selected skills and disabled skills by clicking the button in the bottom of the screen.",
+  "indicators-text": "The color of the skills will be changed to indicate if the skill is selected or disabled.",
+  "indicators-text-selected": "Green when you selected this skill.",
+  "indicators-text-disabled": "Red when you disabled this skill.",
+  "indicators-text-child-selected": "Dark green when this skill is a child of a selected skill.",
+  "reset-selected": "Reset selected skills",
+  "reset-disabled": "Reset disabled skills",
+  "result-gp": "Used so far: <1>{{gpTotal}}</1> GP"
+}

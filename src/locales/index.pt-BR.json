@@ -1,0 +1,16 @@
+{
+  "title": "Simulador de custo de habilidades no MHFrontier!",
+  "description": "Simule o custo de habilidades no MHFrontier.",
+  "how-to-use": "Como usar",
+  "how-to-select": "Selecione as habilidades que deseja calcular marcando a caixa de seleção na primeira coluna ({{col}}).",
+  "how-to-disable": "Desative as habilidades que você não deseja calcular marcando a caixa de seleção na segunda coluna ({{col}}).",
+  "how-to-calculate": "O resultado será mostrado na parte inferior da tela.",
+  "how-to-clear": "Você pode limpar as habilidades selecionadas e as habilidades desabilitadas clicando no botão na parte inferior da tela.",
+  "indicators-text": "A cor das habilidades será alterada para indicar se a habilidade está selecionada ou desativada.",
+  "indicators-text-selected": "Verde quando você selecionou essa habilidade.",
+  "indicators-text-disabled": "Vermelho quando você desativou essa habilidade.",
+  "indicators-text-child-selected": "Verde escuro quando essa habilidade é filha de uma habilidade selecionada.",
+  "reset-selected": "Limpar seleções",
+  "reset-disabled": "Limpar desativações",
+  "result-gp": "Custo de habilidades em GP: <1>{{gpTotal}}</1>"
+}
