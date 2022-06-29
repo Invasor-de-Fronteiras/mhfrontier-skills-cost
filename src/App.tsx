@@ -218,12 +218,14 @@ function App() {
       <div className="bg-black fixed z-10 bottom-0 w-full text-white flex flex-wrap  items-center justify-center">
         <div>
           <p>
-            GP usados ate o momento:{" "}
-            <span className="text-red-500">{gpCost}</span> GP
+            used so far: <span className="text-red-500">{gpCost}</span> GP
           </p>
         </div>
         <button className="border px-2 m-2" onClick={() => setSelected([])}>
-          Reset
+          Reset Checked
+        </button>
+        <button className="border px-2 m-2" onClick={() => setDisabled([])}>
+          Reset Disabled
         </button>
       </div>
     </>
