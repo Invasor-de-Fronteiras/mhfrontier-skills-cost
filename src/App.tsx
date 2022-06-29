@@ -1,49 +1,22 @@
 import classNames from "classnames";
-import { useCallback, useMemo, useState } from "react";
+import { useContext } from "react";
+import { context } from "./context";
 import data from "./data/data.json";
-import { categories, getChildren, isChild, sumGP } from "./utils/util";
+import { categories, getChildren, isChild } from "./utils/util";
 
 const showId = false;
 
 function App() {
-  const [selected, setSelected] = useState<number[]>([]);
-  const [disables, setDisabled] = useState<number[]>([]);
-
-  const handleToggle = (id: number) => {
-    setSelected((v) => {
-      const arr = new Set(v);
-
-      const shouldDelete = arr.has(id);
-      if (shouldDelete) {
-        arr.delete(id);
-      } else {
-        arr.add(id);
-      }
-
-      return [...arr];
-    });
-  };
-
-  const handleDisable = (id: number) => {
-    setDisabled((v) => {
-      const arr = new Set(v);
-
-      if (arr.has(id)) {
-        arr.delete(id);
-      } else {
-        arr.add(id);
-      }
-
-      return [...arr];
-    });
-  };
-
-  const isDisabled = useCallback(
-    (id: number) => disables.includes(id) || isChild(disables, id),
-    [disables]
-  );
-
-  const gpCost = useMemo(() => sumGP(selected, isDisabled), [selected]);
+  const {
+    disabledIds,
+    gpTotal,
+    selectedIds,
+    toggleDisabled,
+    toggleSelected,
+    isDisabled,
+    clearDisabled,
+    clearSelected,
+  } = useContext(context);
 
   return (
     <>
@@ -92,8 +65,8 @@ function App() {
                     .filter((v) => v.type === type)
                     .sort((a, b) => a.name.localeCompare(b.name))
                     .map((skill) => {
-                      const isSelected = selected.includes(skill.id);
-                      const isChildren = isChild(selected, skill.id);
+                      const isSelected = selectedIds.includes(skill.id);
+                      const isChildren = isChild(selectedIds, skill.id);
                       const disabled = isDisabled(skill.id);
 
                       return (
@@ -107,15 +80,15 @@ function App() {
                               type="checkbox"
                               checked={isSelected}
                               disabled={disabled}
-                              onChange={(e) => handleToggle(skill.id)}
+                              onChange={(e) => toggleSelected(skill.id)}
                             />
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 cursor-pointer">
                             <input
                               type="checkbox"
                               className=""
-                              checked={disables.includes(skill.id)}
-                              onChange={(e) => handleDisable(skill.id)}
+                              checked={disabledIds.includes(skill.id)}
+                              onChange={(e) => toggleDisabled(skill.id)}
                             />
                           </td>
                           {showId && (
@@ -169,7 +142,7 @@ function App() {
                                           "hover:underline hover:cursor-pointer",
                                           {
                                             "line-through	text-gray-500":
-                                              disables.includes(r.id),
+                                              disabledIds.includes(r.id),
                                           }
                                         )}
                                         href={"#" + r.name}
@@ -218,13 +191,13 @@ function App() {
       <div className="bg-black fixed z-10 bottom-0 w-full text-white flex flex-wrap  items-center justify-center">
         <div>
           <p>
-            used so far: <span className="text-red-500">{gpCost}</span> GP
+            used so far: <span className="text-red-500">{gpTotal}</span> GP
           </p>
         </div>
-        <button className="border px-2 m-2" onClick={() => setSelected([])}>
+        <button className="border px-2 m-2" onClick={clearSelected}>
           Reset Checked
         </button>
-        <button className="border px-2 m-2" onClick={() => setDisabled([])}>
+        <button className="border px-2 m-2" onClick={clearDisabled}>
           Reset Disabled
         </button>
       </div>
