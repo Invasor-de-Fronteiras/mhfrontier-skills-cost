@@ -20,10 +20,50 @@ function App() {
 
   return (
     <>
-      <main className="mx-auto max-w-7xl p-6 text-center ">
-        <h1 className="text-3xl font-bold underline">
+      <main className="mx-auto max-w-7xl p-6">
+        <h1 className="text-3xl font-bold underline text-center">
           MHFrontier Skills Cost Simulator!
         </h1>
+        <p className="text-center mt-2 text-sm">
+          This is a simulator for the skills cost of MHFrontier.
+        </p>
+
+        <h2 className="text-2xl font-bold text-center my-3 md:text-left">
+          How it works?
+        </h2>
+        <p className="text-slate-900">
+          <ul className="list-decimal ml-3 space-y-2">
+            <li>
+              Select the skills you want to calculate by checking the checkbox
+              in the first column (✅).
+            </li>
+            <li>
+              Turn off skills you don't want to calculate by checking the
+              checkbox in the second column (❌).
+            </li>
+            <li>The result will be shown at the bottom of your screen.</li>
+            <li>
+              You can clear the selected skills and disabled skills by clicking
+              the button at the bottom of your screen.
+            </li>
+            <li>
+              The color of the skills will be changed to indicate whether the
+              skill is selected or disabled.
+              <ul className="list-disc ml-4 font-semibold">
+                <li className="text-green-500">
+                  Green when you selected that skill.
+                </li>
+                <li className="text-green-600">
+                  Dark green when that skill is a child of a selected skill.
+                </li>
+                <li className="text-red-500">
+                  Red when you disabled that skill.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+
         {categories.map((type) => (
           <div className="mt-6">
             <h3 className="text-left text-2xl font-bold mb-2" id={type}>
@@ -36,17 +76,17 @@ function App() {
                 <thead className="border-b">
                   <tr>
                     <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
-                      #
+                      ✅
                     </th>
                     <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
-                      Disabled?
+                      ❌
                     </th>
                     {showId && (
                       <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                         ID
                       </th>
                     )}
-                    <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
+                    <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
                       Name
                     </th>
                     <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
@@ -55,8 +95,8 @@ function App() {
                     <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
                       Type
                     </th>
-                    <th className="text-sm font-medium text-gray-900 px-6 py-4 text-center">
-                      Requirements
+                    <th className="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                      Skills Requirements
                     </th>
                   </tr>
                 </thead>
@@ -102,9 +142,9 @@ function App() {
                               className={classNames(
                                 "hover:cursor-pointer hover:underline",
                                 {
-                                  "text-orange-700": isChildren,
-                                  "text-green-500": isSelected,
-                                  "line-through	text-gray-500": disabled,
+                                  "text-green-700": isChildren && !disabled,
+                                  "text-green-500": isSelected && !disabled,
+                                  "line-through	text-red-500": disabled,
                                 }
                               )}
                               href={"#" + skill.name}
@@ -156,6 +196,7 @@ function App() {
                                   recursive: true,
                                   shouldReturnParentsRequirements: false,
                                 }).map((r) => {
+                                  const disabled = isDisabled(r.id);
                                   return (
                                     <li
                                       key={r.id}
@@ -163,10 +204,11 @@ function App() {
                                     >
                                       <a
                                         className={classNames(
-                                          "hover:underline hover:cursor-pointer text-orange-700",
+                                          "hover:underline hover:cursor-pointer",
                                           {
-                                            "line-through	text-gray-500":
-                                              isDisabled(r.id),
+                                            "text-green-600": !disabled,
+                                            "line-through	text-red-500":
+                                              disabled,
                                           }
                                         )}
                                         href={"#" + r.name}
@@ -190,7 +232,7 @@ function App() {
       </main>
       <div className="bg-black fixed z-10 bottom-0 w-full text-white flex flex-wrap  items-center justify-center">
         <div>
-          <p>
+          <p className="font-semibold">
             used so far: <span className="text-red-500">{gpTotal}</span> GP
           </p>
         </div>
