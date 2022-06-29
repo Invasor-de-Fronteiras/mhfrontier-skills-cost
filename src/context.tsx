@@ -56,7 +56,11 @@ export function Provider({ children }: ProviderProps) {
     [disables]
   );
 
-  const gpTotal = useMemo(() => sumGP(selected, isDisabled), [selected]);
+  // ! it should have the disabled ids in hook dependencies for works
+  const gpTotal = useMemo(
+    () => sumGP(selected, isDisabled),
+    [selected, disables]
+  );
 
   return (
     <context.Provider
