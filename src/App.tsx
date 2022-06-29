@@ -6,7 +6,6 @@ import data from "./data/data.json";
 import { categories, getChildren, isChild } from "./utils/util";
 
 const showId = false;
-import i18n from "./i18n";
 
 function App() {
   const {
@@ -22,6 +21,11 @@ function App() {
 
   const { t, i18n } = useTranslation("index");
 
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+    localStorage.setItem("i18nextLng", lang);
+  };
+
   return (
     <>
       <main className="mx-auto max-w-7xl p-6">
@@ -32,14 +36,14 @@ function App() {
         <h2 className="text-2xl font-bold text-center my-3 md:text-left">
           {t("Translations")}
         </h2>
-        <ul>
+        <ul className="text-center md:text-left">
           <li className="underline underline-offset-1 text-blue-400">
-            <span role="button" onClick={() => i18n.changeLanguage("en")}>
+            <span role="button" onClick={() => changeLanguage("en")}>
               English
             </span>
           </li>
           <li className="underline underline-offset-1 text-blue-400">
-            <span role="button" onClick={() => i18n.changeLanguage("pt-BR")}>
+            <span role="button" onClick={() => changeLanguage("pt-BR")}>
               Português (Brasil)
             </span>
           </li>
@@ -47,7 +51,7 @@ function App() {
         <h2 className="text-2xl font-bold text-center my-3 md:text-left">
           {t("how-to-use")}
         </h2>
-        <p className="text-slate-900">
+        <div className="text-slate-900">
           <ul className="list-decimal ml-3 space-y-2">
             <li>{t("how-to-select", { col: "✅" })}</li>
             <li>{t("how-to-disable", { col: "❌" })}</li>
@@ -68,7 +72,7 @@ function App() {
               </ul>
             </li>
           </ul>
-        </p>
+        </div>
 
         {categories.map((type) => (
           <div className="mt-6">
@@ -249,12 +253,14 @@ function App() {
             </Trans>
           </p>
         </div>
-        <button className="border px-2 m-2" onClick={clearSelected}>
-          {t("reset-selected")}
-        </button>
-        <button className="border px-2 m-2" onClick={clearDisabled}>
-          {t("reset-disabled")}
-        </button>
+        <div>
+          <button className="border px-2 m-2" onClick={clearSelected}>
+            {t("reset-selected")}
+          </button>
+          <button className="border px-2 m-2" onClick={clearDisabled}>
+            {t("reset-disabled")}
+          </button>
+        </div>
       </div>
     </>
   );
